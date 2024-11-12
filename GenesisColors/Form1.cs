@@ -15,6 +15,10 @@ namespace GenesisColors
 
 		List<Color> DuplicatedColor = new List<Color>();
 
+
+		private PictureBox? lastPaletteASESelected;
+		private PictureBox? lastPaletteGenesisSelected;
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -137,9 +141,6 @@ namespace GenesisColors
 				}
 			}
 		}
-
-		private PictureBox lastPaletteASESelected;
-		private PictureBox lastPaletteGenesisSelected;
 
 		private void ASEPalettePictureBox_MouseClick(object? sender, MouseEventArgs e)
 		{
@@ -269,13 +270,16 @@ namespace GenesisColors
 
 		private void pictureBox_GenesisPalette_Click(object sender, EventArgs e)
 		{
-			MouseEventArgs rato = e as MouseEventArgs;
-			Bitmap b = ((Bitmap)pictureBox_GenesisPalette.Image);
-			int x = rato.X * b.Width / pictureBox_GenesisPalette.ClientSize.Width;
-			int y = rato.Y * b.Height / pictureBox_GenesisPalette.ClientSize.Height;
-			Color c = b.GetPixel(x, y);
-			SetColorARGB(c);
-			textBox_ColorARGB.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
+			MouseEventArgs? rato = e as MouseEventArgs;
+			if (rato != null)
+			{
+				Bitmap b = ((Bitmap)pictureBox_GenesisPalette.Image);
+				int x = rato.X * b.Width / pictureBox_GenesisPalette.ClientSize.Width;
+				int y = rato.Y * b.Height / pictureBox_GenesisPalette.ClientSize.Height;
+				Color c = b.GetPixel(x, y);
+				SetColorARGB(c);
+				textBox_ColorARGB.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
+			}
 		}
 
 		private void textBox_ColorARGB_TextChanged(object sender, EventArgs e)

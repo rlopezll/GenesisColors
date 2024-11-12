@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			pictureBox_GenesisPalette = new PictureBox();
 			pictureBox_RGB8 = new PictureBox();
 			pictureBox_Genesis = new PictureBox();
@@ -40,6 +41,9 @@
 			textBox_ColorGenesisDecimal = new TextBox();
 			tabControl1 = new TabControl();
 			tabPage1 = new TabPage();
+			label8 = new Label();
+			label7 = new Label();
+			textBox_ColorGenesisConverted = new TextBox();
 			tabPage2 = new TabPage();
 			pictureBox49 = new PictureBox();
 			pictureBox50 = new PictureBox();
@@ -111,9 +115,6 @@
 			pictureBox4 = new PictureBox();
 			pictureBox2 = new PictureBox();
 			pictureBox1 = new PictureBox();
-			textBox_ColorGenesisConverted = new TextBox();
-			label7 = new Label();
-			label8 = new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox_GenesisPalette).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_RGB8).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_Genesis).BeginInit();
@@ -309,6 +310,32 @@
 			tabPage1.TabIndex = 0;
 			tabPage1.Text = "Color Picker";
 			tabPage1.UseVisualStyleBackColor = true;
+			// 
+			// label8
+			// 
+			label8.AutoSize = true;
+			label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Underline);
+			label8.Location = new Point(473, 63);
+			label8.Name = "label8";
+			label8.Size = new Size(88, 15);
+			label8.TabIndex = 12;
+			label8.Text = "Genesis Values";
+			// 
+			// label7
+			// 
+			label7.AutoSize = true;
+			label7.Location = new Point(473, 93);
+			label7.Name = "label7";
+			label7.Size = new Size(32, 15);
+			label7.TabIndex = 11;
+			label7.Text = "HEX:";
+			// 
+			// textBox_ColorGenesisConverted
+			// 
+			textBox_ColorGenesisConverted.Location = new Point(340, 34);
+			textBox_ColorGenesisConverted.Name = "textBox_ColorGenesisConverted";
+			textBox_ColorGenesisConverted.Size = new Size(127, 23);
+			textBox_ColorGenesisConverted.TabIndex = 10;
 			// 
 			// tabPage2
 			// 
@@ -1023,32 +1050,6 @@
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
 			// 
-			// textBox_ColorGenesisConverted
-			// 
-			textBox_ColorGenesisConverted.Location = new Point(340, 34);
-			textBox_ColorGenesisConverted.Name = "textBox_ColorGenesisConverted";
-			textBox_ColorGenesisConverted.Size = new Size(127, 23);
-			textBox_ColorGenesisConverted.TabIndex = 10;
-			// 
-			// label7
-			// 
-			label7.AutoSize = true;
-			label7.Location = new Point(473, 93);
-			label7.Name = "label7";
-			label7.Size = new Size(32, 15);
-			label7.TabIndex = 11;
-			label7.Text = "HEX:";
-			// 
-			// label8
-			// 
-			label8.AutoSize = true;
-			label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Underline);
-			label8.Location = new Point(473, 63);
-			label8.Name = "label8";
-			label8.Size = new Size(88, 15);
-			label8.TabIndex = 12;
-			label8.Text = "Genesis Values";
-			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1056,6 +1057,7 @@
 			ClientSize = new Size(611, 393);
 			Controls.Add(tabControl1);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			MaximizeBox = false;
 			Name = "Form1";
 			StartPosition = FormStartPosition.CenterScreen;
