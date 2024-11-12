@@ -113,19 +113,56 @@ namespace GenesisColors
 			for (int i = 0;i< ASEPalette.Count;i++)
 			{
 				ASEPalette[i].MouseClick += ASEPalettePictureBox_MouseClick;
+				ASEPalette[i].Paint += PictureBoxPalette_Paint;
 			}
 			for (int i = 0; i < GenesisPalette.Count; i++)
 			{
 				GenesisPalette[i].MouseClick += GenesisPalettePictureBox_MouseClick;
+				GenesisPalette[i].Paint += PictureBoxPalette_Paint;
 			}
 		}
+
+		private void PictureBoxPalette_Paint(object? sender, PaintEventArgs e)
+		{
+			if (sender is PictureBox)
+			{
+				PictureBox picture = (PictureBox)sender;
+				if (picture.Tag != null)
+				{
+					ControlPaint.DrawBorder(e.Graphics, picture.ClientRectangle, Color.Red, ButtonBorderStyle.Solid);
+				}
+				else
+				{
+					ControlPaint.DrawBorder(e.Graphics, picture.ClientRectangle, Color.Transparent, ButtonBorderStyle.Solid);
+				}
+			}
+		}
+
+		private PictureBox lastPaletteASESelected;
+		private PictureBox lastPaletteGenesisSelected;
 
 		private void ASEPalettePictureBox_MouseClick(object? sender, MouseEventArgs e)
 		{
 			if(sender is PictureBox)
 			{
+				if (lastPaletteASESelected != null)
+				{
+					lastPaletteASESelected.Tag = null;
+					lastPaletteASESelected.Invalidate();
+				}
+
 				PictureBox picture = (PictureBox)sender;
-				textBox_PaletteASEValue.Text = picture.DataContext.ToString();
+				if (picture.DataContext is null)
+				{
+					textBox_PaletteASEValue.Text = "";
+				}
+				else
+				{
+					textBox_PaletteASEValue.Text = picture.DataContext.ToString();
+				}
+				picture.Tag = "Selected";
+				picture.Invalidate();
+				lastPaletteASESelected = picture;
 			}
 		}
 
@@ -133,8 +170,24 @@ namespace GenesisColors
 		{
 			if (sender is PictureBox)
 			{
+				if (lastPaletteGenesisSelected != null)
+				{
+					lastPaletteGenesisSelected.Tag = null;
+					lastPaletteGenesisSelected.Invalidate();
+				}
+
 				PictureBox picture = (PictureBox)sender;
-				textBox_PaletteGenesisValue.Text = picture.DataContext.ToString();
+				if (picture.DataContext is null)
+				{
+					textBox_PaletteGenesisValue.Text = "";
+				}
+				else
+				{
+					textBox_PaletteGenesisValue.Text = picture.DataContext.ToString();
+				}
+				picture.Tag = "Selected";
+				picture.Invalidate();
+				lastPaletteGenesisSelected = picture;
 			}
 		}
 
@@ -146,7 +199,15 @@ namespace GenesisColors
 			Brush brush = new SolidBrush(color);
 
 			graphics.FillRectangle(brush, new System.Drawing.Rectangle(0, 0, pic.Width, pic.Height));
+		}
 
+		private void SetEmptyColorPicturebox(PictureBox pic)
+		{
+			pic.Image = new Bitmap(pic.Width, pic.Height);
+			Graphics graphics = Graphics.FromImage(pic.Image);
+			Brush brush = new SolidBrush(Color.Transparent);
+
+			graphics.FillRectangle(brush, new System.Drawing.Rectangle(0, 0, pic.Width, pic.Height));
 		}
 
 		private void SetColorARGB(Color color)
@@ -159,6 +220,7 @@ namespace GenesisColors
 			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString();
 			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
 			Color c = Color.FromArgb((int)genesis_color_converted);
+			textBox_ColorGenesisConverted.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
 			SetColorPicturebox(pictureBox_Genesis, c);
 		}
 
@@ -174,6 +236,7 @@ namespace GenesisColors
 			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
 			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
 			textBox_ColorARGB.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+			textBox_ColorGenesisConverted.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
 		}
 
 		private uint ConvertARGBToGenesis(uint color)
@@ -293,6 +356,18 @@ namespace GenesisColors
 			if (!File.Exists(filename))
 				return;
 
+			textBox_PaletteASEValue.Text = "";
+			textBox_PaletteGenesisValue.Text = "";
+
+			for (int i = 0; i < ASEPalette.Count; i++)
+			{
+				ASEPalette[i].Tag = null;
+			}
+			for (int i = 0; i < GenesisPalette.Count; i++)
+			{
+				GenesisPalette[i].Tag = null;
+			}
+
 			byte[] fileBytes = File.ReadAllBytes(filename);
 			int totalColors = (int)fileBytes[0x20];
 			int positionColor = 0xAA;
@@ -348,6 +423,7 @@ namespace GenesisColors
 					ColorSlot slot = new ColorSlot();
 					slot.firstSlot = currColorIdx;
 					ASEColorsDict.Add(icolor, slot);
+					SetEmptyColorPicturebox(ASEPaletteDuplicated[currColorIdx]);
 				}
 
 				if (genesisColorsDict.ContainsKey(genesis_color))
@@ -373,6 +449,7 @@ namespace GenesisColors
 					ColorSlot slot = new ColorSlot();
 					slot.firstSlot = currColorIdx;
 					genesisColorsDict.Add(genesis_color, slot);
+					SetEmptyColorPicturebox(GenesisPaletteDuplicated[currColorIdx]);
 				}
 
 				positionColor += 4;

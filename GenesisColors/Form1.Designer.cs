@@ -111,6 +111,9 @@
 			pictureBox4 = new PictureBox();
 			pictureBox2 = new PictureBox();
 			pictureBox1 = new PictureBox();
+			textBox_ColorGenesisConverted = new TextBox();
+			label7 = new Label();
+			label8 = new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox_GenesisPalette).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_RGB8).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_Genesis).BeginInit();
@@ -206,7 +209,7 @@
 			// pictureBox_Genesis
 			// 
 			pictureBox_Genesis.BorderStyle = BorderStyle.FixedSingle;
-			pictureBox_Genesis.Location = new Point(367, 63);
+			pictureBox_Genesis.Location = new Point(340, 63);
 			pictureBox_Genesis.Name = "pictureBox_Genesis";
 			pictureBox_Genesis.Size = new Size(127, 133);
 			pictureBox_Genesis.TabIndex = 2;
@@ -243,7 +246,7 @@
 			// 
 			// textBox_ColorGenesis
 			// 
-			textBox_ColorGenesis.Location = new Point(367, 34);
+			textBox_ColorGenesis.Location = new Point(473, 111);
 			textBox_ColorGenesis.Name = "textBox_ColorGenesis";
 			textBox_ColorGenesis.Size = new Size(58, 23);
 			textBox_ColorGenesis.TabIndex = 6;
@@ -252,7 +255,7 @@
 			// 
 			label3.AutoSize = true;
 			label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-			label3.Location = new Point(367, 14);
+			label3.Location = new Point(340, 14);
 			label3.Name = "label3";
 			label3.Size = new Size(179, 21);
 			label3.TabIndex = 7;
@@ -261,7 +264,7 @@
 			// label4
 			// 
 			label4.AutoSize = true;
-			label4.Location = new Point(426, 38);
+			label4.Location = new Point(473, 155);
 			label4.Name = "label4";
 			label4.Size = new Size(53, 15);
 			label4.TabIndex = 8;
@@ -269,7 +272,7 @@
 			// 
 			// textBox_ColorGenesisDecimal
 			// 
-			textBox_ColorGenesisDecimal.Location = new Point(477, 35);
+			textBox_ColorGenesisDecimal.Location = new Point(473, 173);
 			textBox_ColorGenesisDecimal.Name = "textBox_ColorGenesisDecimal";
 			textBox_ColorGenesisDecimal.Size = new Size(60, 23);
 			textBox_ColorGenesisDecimal.TabIndex = 9;
@@ -286,6 +289,9 @@
 			// 
 			// tabPage1
 			// 
+			tabPage1.Controls.Add(label8);
+			tabPage1.Controls.Add(label7);
+			tabPage1.Controls.Add(textBox_ColorGenesisConverted);
 			tabPage1.Controls.Add(pictureBox_RGB8);
 			tabPage1.Controls.Add(textBox_ColorGenesisDecimal);
 			tabPage1.Controls.Add(pictureBox_GenesisPalette);
@@ -1017,6 +1023,32 @@
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
 			// 
+			// textBox_ColorGenesisConverted
+			// 
+			textBox_ColorGenesisConverted.Location = new Point(340, 34);
+			textBox_ColorGenesisConverted.Name = "textBox_ColorGenesisConverted";
+			textBox_ColorGenesisConverted.Size = new Size(127, 23);
+			textBox_ColorGenesisConverted.TabIndex = 10;
+			// 
+			// label7
+			// 
+			label7.AutoSize = true;
+			label7.Location = new Point(473, 93);
+			label7.Name = "label7";
+			label7.Size = new Size(32, 15);
+			label7.TabIndex = 11;
+			label7.Text = "HEX:";
+			// 
+			// label8
+			// 
+			label8.AutoSize = true;
+			label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Underline);
+			label8.Location = new Point(473, 63);
+			label8.Name = "label8";
+			label8.Size = new Size(88, 15);
+			label8.TabIndex = 12;
+			label8.Text = "Genesis Values";
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1189,5 +1221,8 @@
 		private PictureBox pictureBox62;
 		private PictureBox pictureBox63;
 		private PictureBox pictureBox64;
+		private Label label8;
+		private Label label7;
+		private TextBox textBox_ColorGenesisConverted;
 	}
 }
