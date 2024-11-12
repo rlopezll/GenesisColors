@@ -9,7 +9,11 @@ namespace GenesisColors
 	{
 		String LastFolderASEFile = "";
 		List<PictureBox> ASEPalette = new List<PictureBox>();
+		List<PictureBox> ASEPaletteDuplicated = new List<PictureBox>();
 		List<PictureBox> GenesisPalette = new List<PictureBox>();
+		List<PictureBox> GenesisPaletteDuplicated = new List<PictureBox>();
+
+		List<Color> DuplicatedColor = new List<Color>();
 
 		public Form1()
 		{
@@ -60,7 +64,53 @@ namespace GenesisColors
 			GenesisPalette.Add(pictureBox31);
 			GenesisPalette.Add(pictureBox32);
 
-			for(int i = 0;i< ASEPalette.Count;i++)
+			ASEPaletteDuplicated.Clear();
+			ASEPaletteDuplicated.Add(pictureBox33);
+			ASEPaletteDuplicated.Add(pictureBox34);
+			ASEPaletteDuplicated.Add(pictureBox35);
+			ASEPaletteDuplicated.Add(pictureBox36);
+			ASEPaletteDuplicated.Add(pictureBox37);
+			ASEPaletteDuplicated.Add(pictureBox38);
+			ASEPaletteDuplicated.Add(pictureBox39);
+			ASEPaletteDuplicated.Add(pictureBox40);
+			ASEPaletteDuplicated.Add(pictureBox41);
+			ASEPaletteDuplicated.Add(pictureBox42);
+			ASEPaletteDuplicated.Add(pictureBox43);
+			ASEPaletteDuplicated.Add(pictureBox44);
+			ASEPaletteDuplicated.Add(pictureBox45);
+			ASEPaletteDuplicated.Add(pictureBox46);
+			ASEPaletteDuplicated.Add(pictureBox47);
+			ASEPaletteDuplicated.Add(pictureBox48);
+
+			GenesisPaletteDuplicated.Clear();
+			GenesisPaletteDuplicated.Add(pictureBox49);
+			GenesisPaletteDuplicated.Add(pictureBox50);
+			GenesisPaletteDuplicated.Add(pictureBox51);
+			GenesisPaletteDuplicated.Add(pictureBox52);
+			GenesisPaletteDuplicated.Add(pictureBox53);
+			GenesisPaletteDuplicated.Add(pictureBox54);
+			GenesisPaletteDuplicated.Add(pictureBox55);
+			GenesisPaletteDuplicated.Add(pictureBox56);
+			GenesisPaletteDuplicated.Add(pictureBox57);
+			GenesisPaletteDuplicated.Add(pictureBox58);
+			GenesisPaletteDuplicated.Add(pictureBox59);
+			GenesisPaletteDuplicated.Add(pictureBox60);
+			GenesisPaletteDuplicated.Add(pictureBox61);
+			GenesisPaletteDuplicated.Add(pictureBox62);
+			GenesisPaletteDuplicated.Add(pictureBox63);
+			GenesisPaletteDuplicated.Add(pictureBox64);
+
+			DuplicatedColor.Clear();
+			DuplicatedColor.Add(Color.Red);
+			DuplicatedColor.Add(Color.Green);
+			DuplicatedColor.Add(Color.Blue);
+			DuplicatedColor.Add(Color.Yellow);
+			DuplicatedColor.Add(Color.Violet);
+			DuplicatedColor.Add(Color.Pink);
+			DuplicatedColor.Add(Color.Orange);
+			DuplicatedColor.Add(Color.LightBlue);
+
+			for (int i = 0;i< ASEPalette.Count;i++)
 			{
 				ASEPalette[i].MouseClick += ASEPalettePictureBox_MouseClick;
 			}
@@ -226,6 +276,18 @@ namespace GenesisColors
 			ProccessASEFile(LastFolderASEFile);
 		}
 
+		struct ColorSlot
+		{
+			public int duplicateColorIdx;
+			public int firstSlot;
+
+			public ColorSlot()
+			{
+				firstSlot = -1;
+				duplicateColorIdx = -1;
+			}
+		}
+
 		private void ProccessASEFile(string filename)
 		{
 			if (!File.Exists(filename))
@@ -235,6 +297,12 @@ namespace GenesisColors
 			int totalColors = (int)fileBytes[0x20];
 			int positionColor = 0xAA;
 			int currColorIdx = 0;
+
+			Dictionary<uint, ColorSlot> ASEColorsDict = new Dictionary<uint, ColorSlot>();
+			Dictionary<uint, ColorSlot> genesisColorsDict = new Dictionary<uint, ColorSlot>();
+			int currDuplicatedASEColorIdx = 0;
+			int currDuplicatedGenesisColorIdx = 0;
+
 			while (currColorIdx < totalColors && positionColor<fileBytes.Length && currColorIdx < ASEPalette.Count)
 			{
 				positionColor += 2;
@@ -255,6 +323,57 @@ namespace GenesisColors
 				SetColorPicturebox(GenesisPalette[currColorIdx], c);
 				tooltipText = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
 				GenesisPalette[currColorIdx].DataContext = tooltipText;
+
+				//Check duplicates
+				if(ASEColorsDict.ContainsKey(icolor))
+				{
+					ColorSlot slot = ASEColorsDict[icolor];
+					if(slot.duplicateColorIdx < 0)
+					{
+						slot.duplicateColorIdx = currDuplicatedASEColorIdx;
+						ASEColorsDict[icolor] = slot;
+						++currDuplicatedASEColorIdx;
+						if(slot.firstSlot >=0 && slot.firstSlot < ASEPaletteDuplicated.Count)
+						{
+							SetColorPicturebox(ASEPaletteDuplicated[slot.firstSlot], DuplicatedColor[slot.duplicateColorIdx]);
+						}
+					}
+					if (slot.duplicateColorIdx < DuplicatedColor.Count)
+						SetColorPicturebox(ASEPaletteDuplicated[currColorIdx], DuplicatedColor[slot.duplicateColorIdx]);
+					else
+						SetColorPicturebox(ASEPaletteDuplicated[currColorIdx], Color.Black);
+				}
+				else
+				{
+					ColorSlot slot = new ColorSlot();
+					slot.firstSlot = currColorIdx;
+					ASEColorsDict.Add(icolor, slot);
+				}
+
+				if (genesisColorsDict.ContainsKey(genesis_color))
+				{
+					ColorSlot slot = genesisColorsDict[genesis_color];
+					if (slot.duplicateColorIdx < 0)
+					{
+						slot.duplicateColorIdx = currDuplicatedGenesisColorIdx;
+						genesisColorsDict[genesis_color] = slot;
+						++currDuplicatedGenesisColorIdx;
+						if (slot.firstSlot >= 0 && slot.firstSlot < GenesisPaletteDuplicated.Count)
+						{
+							SetColorPicturebox(GenesisPaletteDuplicated[slot.firstSlot], DuplicatedColor[slot.duplicateColorIdx]);
+						}
+					}
+					if (slot.duplicateColorIdx < DuplicatedColor.Count)
+						SetColorPicturebox(GenesisPaletteDuplicated[currColorIdx], DuplicatedColor[slot.duplicateColorIdx]);
+					else
+						SetColorPicturebox(GenesisPaletteDuplicated[currColorIdx], Color.Black);
+				}
+				else
+				{
+					ColorSlot slot = new ColorSlot();
+					slot.firstSlot = currColorIdx;
+					genesisColorsDict.Add(genesis_color, slot);
+				}
 
 				positionColor += 4;
 				currColorIdx++;
