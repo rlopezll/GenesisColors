@@ -32,6 +32,130 @@ namespace GenesisColors
 			RegisterCRAMPalettes();
 		}
 
+		private void SetColorARGB(Color color)
+		{
+			Utils.SetColorPicturebox(pictureBox_RGB8, color);
+
+			uint icolor = (uint)color.ToArgb();
+			uint genesis_color = Utils.ConvertARGBToGenesis(icolor);
+			uint genesis_color_converted = Utils.ConvertGenesisToARGB(genesis_color);
+			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
+			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
+			Color c = Color.FromArgb((int)genesis_color_converted);
+			textBox_ColorGenesisConverted.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
+			Utils.SetColorPicturebox(pictureBox_Genesis, c);
+		}
+
+		private void SetColorGenesis(uint genesis_color)
+		{
+			uint color_converted = Utils.ConvertGenesisToARGB(genesis_color);
+			Color acolor = Color.FromArgb((int)color_converted);
+			Color color = Color.FromArgb(255, acolor);
+
+			Utils.SetColorPicturebox(pictureBox_RGB8, color);
+			Utils.SetColorPicturebox(pictureBox_Genesis, color);
+
+			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
+			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
+			textBox_ColorARGB.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+			textBox_ColorGenesisConverted.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+		}
+
+		private void pictureBox_GenesisPalette_Click(object sender, EventArgs e)
+		{
+			MouseEventArgs? rato = e as MouseEventArgs;
+			if (rato != null)
+			{
+				Bitmap b = ((Bitmap)pictureBox_GenesisPalette.Image);
+				int x = rato.X * b.Width / pictureBox_GenesisPalette.ClientSize.Width;
+				int y = rato.Y * b.Height / pictureBox_GenesisPalette.ClientSize.Height;
+				Color c = b.GetPixel(x, y);
+				SetColorARGB(c);
+				textBox_ColorARGB.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
+			}
+		}
+
+		void textBox_KeyDown(object? sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Enter)
+			{
+				if (sender == textBox_ColorARGB)
+				{
+					int value = Convert.ToInt32(textBox_ColorARGB.Text, 16);
+					Color acolor = Color.FromArgb(value);
+					Color color = Color.FromArgb(255, acolor);
+					SetColorARGB(color);
+				}
+				else if (sender == textBox_ColorGenesisDecimal)
+				{
+					uint value = 0;
+					if (uint.TryParse(textBox_ColorGenesisDecimal.Text, out value))
+					{
+						SetColorGenesis((uint)value);
+					}
+				}
+				else if (sender == textBox_ColorGenesis)
+				{
+					uint value = (uint)Convert.ToInt32(textBox_ColorGenesis.Text, 16);
+					SetColorGenesis((uint)value);
+				}
+			}
+		}
+
+		private void button_LoadPalette_Click(object sender, EventArgs e)
+		{
+			if (LastFolderASEFile == "")
+			{
+				LastFolderASEFile = AppDomain.CurrentDomain.BaseDirectory;
+			}
+
+			OpenFileDialog dialog = new OpenFileDialog();
+			dialog.Filter = "ASEprite format|*.ase";
+			dialog.CheckFileExists = true;
+			dialog.InitialDirectory = LastFolderASEFile;
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				LastFolderASEFile = Path.GetFullPath(dialog.FileName);
+				ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
+				button_RefreshPalette.Enabled = true;
+			}
+		}
+
+		private void button_RefreshPalette_Click(object sender, EventArgs e)
+		{
+			ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
+		}
+
+		private void button_LoadCRAMFile_Click(object sender, EventArgs e)
+		{
+			if (LastFolderCRAMFile == "")
+			{
+				LastFolderCRAMFile = AppDomain.CurrentDomain.BaseDirectory;
+			}
+
+			OpenFileDialog dialog = new OpenFileDialog();
+			dialog.Filter = "CRAM format|*.bin;*.ram|All files|*.*";
+			dialog.CheckFileExists = true;
+			dialog.InitialDirectory = LastFolderCRAMFile;
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				LastFolderCRAMFile = Path.GetFullPath(dialog.FileName);
+				CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
+				button_RefreshCRAMFile.Enabled = true;
+			}
+		}
+
+		private void button_RefreshCRAMFile_Click(object sender, EventArgs e)
+		{
+			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
+		}
+
+		private void checkBox_SwapBytes_CheckedChanged(object sender, EventArgs e)
+		{
+			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
+		}
+
+
 		private void RegisterGenesisPalette()
 		{
 			List<PictureBox> GenesisPaletteList = new List<PictureBox>();
@@ -205,7 +329,7 @@ namespace GenesisColors
 			CRAMPaletteDuplicatedList.Add(pictureBox77);
 			CRAMPaletteDuplicatedList.Add(pictureBox78);
 			CRAMPaletteDuplicatedList.Add(pictureBox79);
-			CRAMPaletteDuplicatedList.Add(pictureBox89);
+			CRAMPaletteDuplicatedList.Add(pictureBox80);
 
 			CRAMPaletteDuplicatedList.Add(pictureBox97);
 			CRAMPaletteDuplicatedList.Add(pictureBox98);
@@ -263,127 +387,5 @@ namespace GenesisColors
 			CRAMFullPalettes.RegisterPictureBoxDuplicatedIndicators(CRAMPaletteDuplicatedList);
 		}
 
-		private void SetColorARGB(Color color)
-		{
-			Utils.SetColorPicturebox(pictureBox_RGB8, color);
-
-			uint icolor = (uint)color.ToArgb();
-			uint genesis_color = Utils.ConvertARGBToGenesis(icolor);
-			uint genesis_color_converted = Utils.ConvertGenesisToARGB(genesis_color);
-			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
-			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
-			Color c = Color.FromArgb((int)genesis_color_converted);
-			textBox_ColorGenesisConverted.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
-			Utils.SetColorPicturebox(pictureBox_Genesis, c);
-		}
-
-		private void SetColorGenesis(uint genesis_color)
-		{
-			uint color_converted = Utils.ConvertGenesisToARGB(genesis_color);
-			Color acolor = Color.FromArgb((int)color_converted);
-			Color color = Color.FromArgb(255, acolor);
-
-			Utils.SetColorPicturebox(pictureBox_RGB8, color);
-			Utils.SetColorPicturebox(pictureBox_Genesis, color);
-
-			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
-			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
-			textBox_ColorARGB.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
-			textBox_ColorGenesisConverted.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
-		}
-
-		private void pictureBox_GenesisPalette_Click(object sender, EventArgs e)
-		{
-			MouseEventArgs? rato = e as MouseEventArgs;
-			if (rato != null)
-			{
-				Bitmap b = ((Bitmap)pictureBox_GenesisPalette.Image);
-				int x = rato.X * b.Width / pictureBox_GenesisPalette.ClientSize.Width;
-				int y = rato.Y * b.Height / pictureBox_GenesisPalette.ClientSize.Height;
-				Color c = b.GetPixel(x, y);
-				SetColorARGB(c);
-				textBox_ColorARGB.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
-			}
-		}
-
-		void textBox_KeyDown(object? sender, KeyEventArgs e)
-		{
-			if (e.KeyCode == Keys.Enter)
-			{
-				if (sender == textBox_ColorARGB)
-				{
-					int value = Convert.ToInt32(textBox_ColorARGB.Text, 16);
-					Color acolor = Color.FromArgb(value);
-					Color color = Color.FromArgb(255, acolor);
-					SetColorARGB(color);
-				}
-				else if (sender == textBox_ColorGenesisDecimal)
-				{
-					uint value = 0;
-					if (uint.TryParse(textBox_ColorGenesisDecimal.Text, out value))
-					{
-						SetColorGenesis((uint)value);
-					}
-				}
-				else if (sender == textBox_ColorGenesis)
-				{
-					uint value = (uint)Convert.ToInt32(textBox_ColorGenesis.Text, 16);
-					SetColorGenesis((uint)value);
-				}
-			}
-		}
-
-		private void button_LoadPalette_Click(object sender, EventArgs e)
-		{
-			if (LastFolderASEFile == "")
-			{
-				LastFolderASEFile = AppDomain.CurrentDomain.BaseDirectory;
-			}
-
-			OpenFileDialog dialog = new OpenFileDialog();
-			dialog.Filter = "ASEprite format|*.ase";
-			dialog.CheckFileExists = true;
-			dialog.InitialDirectory = LastFolderASEFile;
-			if (dialog.ShowDialog() == DialogResult.OK)
-			{
-				LastFolderASEFile = Path.GetFullPath(dialog.FileName);
-				ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
-				button_RefreshPalette.Enabled = true;
-			}
-		}
-
-		private void button_RefreshPalette_Click(object sender, EventArgs e)
-		{
-			ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
-		}
-
-		private void button_LoadCRAMFile_Click(object sender, EventArgs e)
-		{
-			if (LastFolderCRAMFile == "")
-			{
-				LastFolderCRAMFile = AppDomain.CurrentDomain.BaseDirectory;
-			}
-
-			OpenFileDialog dialog = new OpenFileDialog();
-			dialog.Filter = "CRAM format|*.bin;*.ram|All files|*.*";
-			dialog.CheckFileExists = true;
-			dialog.InitialDirectory = LastFolderCRAMFile;
-			if (dialog.ShowDialog() == DialogResult.OK)
-			{
-				LastFolderCRAMFile = Path.GetFullPath(dialog.FileName);
-				CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
-				button_RefreshCRAMFile.Enabled = true;
-			}
-		}
-
-		private void button_RefreshCRAMFile_Click(object sender, EventArgs e)
-		{
-			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
-		}
-
-		private void checkBox_SwapBytes_CheckedChanged(object sender, EventArgs e)
-		{
-			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
-		}
 	}
 }
