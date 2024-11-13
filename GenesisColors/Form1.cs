@@ -8,16 +8,11 @@ namespace GenesisColors
 	public partial class Form1 : Form
 	{
 		String LastFolderASEFile = "";
-		List<PictureBox> ASEPalette = new List<PictureBox>();
-		List<PictureBox> ASEPaletteDuplicated = new List<PictureBox>();
-		List<PictureBox> GenesisPalette = new List<PictureBox>();
-		List<PictureBox> GenesisPaletteDuplicated = new List<PictureBox>();
+		String LastFolderCRAMFile = "";
 
-		List<Color> DuplicatedColor = new List<Color>();
-
-
-		private PictureBox? lastPaletteASESelected;
-		private PictureBox? lastPaletteGenesisSelected;
+		Palette ASEPalette = new Palette();
+		Palette GenesisPalette = new Palette();
+		Palette CRAMFullPalettes = new Palette();
 
 		public Form1()
 		{
@@ -32,240 +27,269 @@ namespace GenesisColors
 			textBox_ColorGenesisDecimal.KeyDown += handle;
 			SetColorARGB(Color.White);
 
-			ASEPalette.Clear();
-			ASEPalette.Add(pictureBox1);
-			ASEPalette.Add(pictureBox2);
-			ASEPalette.Add(pictureBox3);
-			ASEPalette.Add(pictureBox4);
-			ASEPalette.Add(pictureBox5);
-			ASEPalette.Add(pictureBox6);
-			ASEPalette.Add(pictureBox7);
-			ASEPalette.Add(pictureBox8);
-			ASEPalette.Add(pictureBox9);
-			ASEPalette.Add(pictureBox10);
-			ASEPalette.Add(pictureBox11);
-			ASEPalette.Add(pictureBox12);
-			ASEPalette.Add(pictureBox13);
-			ASEPalette.Add(pictureBox14);
-			ASEPalette.Add(pictureBox15);
-			ASEPalette.Add(pictureBox16);
-
-			GenesisPalette.Clear();
-			GenesisPalette.Add(pictureBox17);
-			GenesisPalette.Add(pictureBox18);
-			GenesisPalette.Add(pictureBox19);
-			GenesisPalette.Add(pictureBox20);
-			GenesisPalette.Add(pictureBox21);
-			GenesisPalette.Add(pictureBox22);
-			GenesisPalette.Add(pictureBox23);
-			GenesisPalette.Add(pictureBox24);
-			GenesisPalette.Add(pictureBox25);
-			GenesisPalette.Add(pictureBox26);
-			GenesisPalette.Add(pictureBox27);
-			GenesisPalette.Add(pictureBox28);
-			GenesisPalette.Add(pictureBox29);
-			GenesisPalette.Add(pictureBox30);
-			GenesisPalette.Add(pictureBox31);
-			GenesisPalette.Add(pictureBox32);
-
-			ASEPaletteDuplicated.Clear();
-			ASEPaletteDuplicated.Add(pictureBox33);
-			ASEPaletteDuplicated.Add(pictureBox34);
-			ASEPaletteDuplicated.Add(pictureBox35);
-			ASEPaletteDuplicated.Add(pictureBox36);
-			ASEPaletteDuplicated.Add(pictureBox37);
-			ASEPaletteDuplicated.Add(pictureBox38);
-			ASEPaletteDuplicated.Add(pictureBox39);
-			ASEPaletteDuplicated.Add(pictureBox40);
-			ASEPaletteDuplicated.Add(pictureBox41);
-			ASEPaletteDuplicated.Add(pictureBox42);
-			ASEPaletteDuplicated.Add(pictureBox43);
-			ASEPaletteDuplicated.Add(pictureBox44);
-			ASEPaletteDuplicated.Add(pictureBox45);
-			ASEPaletteDuplicated.Add(pictureBox46);
-			ASEPaletteDuplicated.Add(pictureBox47);
-			ASEPaletteDuplicated.Add(pictureBox48);
-
-			GenesisPaletteDuplicated.Clear();
-			GenesisPaletteDuplicated.Add(pictureBox49);
-			GenesisPaletteDuplicated.Add(pictureBox50);
-			GenesisPaletteDuplicated.Add(pictureBox51);
-			GenesisPaletteDuplicated.Add(pictureBox52);
-			GenesisPaletteDuplicated.Add(pictureBox53);
-			GenesisPaletteDuplicated.Add(pictureBox54);
-			GenesisPaletteDuplicated.Add(pictureBox55);
-			GenesisPaletteDuplicated.Add(pictureBox56);
-			GenesisPaletteDuplicated.Add(pictureBox57);
-			GenesisPaletteDuplicated.Add(pictureBox58);
-			GenesisPaletteDuplicated.Add(pictureBox59);
-			GenesisPaletteDuplicated.Add(pictureBox60);
-			GenesisPaletteDuplicated.Add(pictureBox61);
-			GenesisPaletteDuplicated.Add(pictureBox62);
-			GenesisPaletteDuplicated.Add(pictureBox63);
-			GenesisPaletteDuplicated.Add(pictureBox64);
-
-			DuplicatedColor.Clear();
-			DuplicatedColor.Add(Color.Red);
-			DuplicatedColor.Add(Color.Green);
-			DuplicatedColor.Add(Color.Blue);
-			DuplicatedColor.Add(Color.Yellow);
-			DuplicatedColor.Add(Color.Violet);
-			DuplicatedColor.Add(Color.Pink);
-			DuplicatedColor.Add(Color.Orange);
-			DuplicatedColor.Add(Color.LightBlue);
-
-			for (int i = 0;i< ASEPalette.Count;i++)
-			{
-				ASEPalette[i].MouseClick += ASEPalettePictureBox_MouseClick;
-				ASEPalette[i].Paint += PictureBoxPalette_Paint;
-			}
-			for (int i = 0; i < GenesisPalette.Count; i++)
-			{
-				GenesisPalette[i].MouseClick += GenesisPalettePictureBox_MouseClick;
-				GenesisPalette[i].Paint += PictureBoxPalette_Paint;
-			}
+			RegisterASEPalette();
+			RegisterGenesisPalette();
+			RegisterCRAMPalettes();
 		}
 
-		private void PictureBoxPalette_Paint(object? sender, PaintEventArgs e)
+		private void RegisterGenesisPalette()
 		{
-			if (sender is PictureBox)
-			{
-				PictureBox picture = (PictureBox)sender;
-				if (picture.Tag != null)
-				{
-					ControlPaint.DrawBorder(e.Graphics, picture.ClientRectangle, Color.Red, ButtonBorderStyle.Solid);
-				}
-				else
-				{
-					ControlPaint.DrawBorder(e.Graphics, picture.ClientRectangle, Color.Transparent, ButtonBorderStyle.Solid);
-				}
-			}
+			List<PictureBox> GenesisPaletteList = new List<PictureBox>();
+			GenesisPaletteList.Add(pictureBox17);
+			GenesisPaletteList.Add(pictureBox18);
+			GenesisPaletteList.Add(pictureBox19);
+			GenesisPaletteList.Add(pictureBox20);
+			GenesisPaletteList.Add(pictureBox21);
+			GenesisPaletteList.Add(pictureBox22);
+			GenesisPaletteList.Add(pictureBox23);
+			GenesisPaletteList.Add(pictureBox24);
+			GenesisPaletteList.Add(pictureBox25);
+			GenesisPaletteList.Add(pictureBox26);
+			GenesisPaletteList.Add(pictureBox27);
+			GenesisPaletteList.Add(pictureBox28);
+			GenesisPaletteList.Add(pictureBox29);
+			GenesisPaletteList.Add(pictureBox30);
+			GenesisPaletteList.Add(pictureBox31);
+			GenesisPaletteList.Add(pictureBox32);
+
+			List<PictureBox> GenesisPaletteDuplicatedList = new List<PictureBox>();
+			GenesisPaletteDuplicatedList.Add(pictureBox49);
+			GenesisPaletteDuplicatedList.Add(pictureBox50);
+			GenesisPaletteDuplicatedList.Add(pictureBox51);
+			GenesisPaletteDuplicatedList.Add(pictureBox52);
+			GenesisPaletteDuplicatedList.Add(pictureBox53);
+			GenesisPaletteDuplicatedList.Add(pictureBox54);
+			GenesisPaletteDuplicatedList.Add(pictureBox55);
+			GenesisPaletteDuplicatedList.Add(pictureBox56);
+			GenesisPaletteDuplicatedList.Add(pictureBox57);
+			GenesisPaletteDuplicatedList.Add(pictureBox58);
+			GenesisPaletteDuplicatedList.Add(pictureBox59);
+			GenesisPaletteDuplicatedList.Add(pictureBox60);
+			GenesisPaletteDuplicatedList.Add(pictureBox61);
+			GenesisPaletteDuplicatedList.Add(pictureBox62);
+			GenesisPaletteDuplicatedList.Add(pictureBox63);
+			GenesisPaletteDuplicatedList.Add(pictureBox64);
+
+			GenesisPalette.RegisterPictureBoxPalette(GenesisPaletteList);
+			GenesisPalette.RegisterTextBoxColorValue(textBox_PaletteGenesisValue);
+			GenesisPalette.RegisterPictureBoxDuplicatedIndicators(GenesisPaletteDuplicatedList);
 		}
 
-		private void ASEPalettePictureBox_MouseClick(object? sender, MouseEventArgs e)
+		private void RegisterASEPalette()
 		{
-			if(sender is PictureBox)
-			{
-				if (lastPaletteASESelected != null)
-				{
-					lastPaletteASESelected.Tag = null;
-					lastPaletteASESelected.Invalidate();
-				}
+			List<PictureBox> ASEPaletteList = new List<PictureBox>();
+			ASEPaletteList.Add(pictureBox1);
+			ASEPaletteList.Add(pictureBox2);
+			ASEPaletteList.Add(pictureBox3);
+			ASEPaletteList.Add(pictureBox4);
+			ASEPaletteList.Add(pictureBox5);
+			ASEPaletteList.Add(pictureBox6);
+			ASEPaletteList.Add(pictureBox7);
+			ASEPaletteList.Add(pictureBox8);
+			ASEPaletteList.Add(pictureBox9);
+			ASEPaletteList.Add(pictureBox10);
+			ASEPaletteList.Add(pictureBox11);
+			ASEPaletteList.Add(pictureBox12);
+			ASEPaletteList.Add(pictureBox13);
+			ASEPaletteList.Add(pictureBox14);
+			ASEPaletteList.Add(pictureBox15);
+			ASEPaletteList.Add(pictureBox16);
 
-				PictureBox picture = (PictureBox)sender;
-				if (picture.DataContext is null)
-				{
-					textBox_PaletteASEValue.Text = "";
-				}
-				else
-				{
-					textBox_PaletteASEValue.Text = picture.DataContext.ToString();
-				}
-				picture.Tag = "Selected";
-				picture.Invalidate();
-				lastPaletteASESelected = picture;
-			}
+			List<PictureBox> ASEPaletteDuplicatedList = new List<PictureBox>();
+			ASEPaletteDuplicatedList.Add(pictureBox33);
+			ASEPaletteDuplicatedList.Add(pictureBox34);
+			ASEPaletteDuplicatedList.Add(pictureBox35);
+			ASEPaletteDuplicatedList.Add(pictureBox36);
+			ASEPaletteDuplicatedList.Add(pictureBox37);
+			ASEPaletteDuplicatedList.Add(pictureBox38);
+			ASEPaletteDuplicatedList.Add(pictureBox39);
+			ASEPaletteDuplicatedList.Add(pictureBox40);
+			ASEPaletteDuplicatedList.Add(pictureBox41);
+			ASEPaletteDuplicatedList.Add(pictureBox42);
+			ASEPaletteDuplicatedList.Add(pictureBox43);
+			ASEPaletteDuplicatedList.Add(pictureBox44);
+			ASEPaletteDuplicatedList.Add(pictureBox45);
+			ASEPaletteDuplicatedList.Add(pictureBox46);
+			ASEPaletteDuplicatedList.Add(pictureBox47);
+			ASEPaletteDuplicatedList.Add(pictureBox48);
+
+			ASEPalette.RegisterPictureBoxPalette(ASEPaletteList);
+			ASEPalette.RegisterTextBoxColorValue(textBox_PaletteASEValue);
+			ASEPalette.RegisterPictureBoxDuplicatedIndicators(ASEPaletteDuplicatedList);
 		}
 
-		private void GenesisPalettePictureBox_MouseClick(object? sender, MouseEventArgs e)
+		private void RegisterCRAMPalettes()
 		{
-			if (sender is PictureBox)
-			{
-				if (lastPaletteGenesisSelected != null)
-				{
-					lastPaletteGenesisSelected.Tag = null;
-					lastPaletteGenesisSelected.Invalidate();
-				}
+			List<PictureBox> CRAMPaletteList = new List<PictureBox>();
+			CRAMPaletteList.Add(pictureBox96);
+			CRAMPaletteList.Add(pictureBox95);
+			CRAMPaletteList.Add(pictureBox93);
+			CRAMPaletteList.Add(pictureBox94);
+			CRAMPaletteList.Add(pictureBox89);
+			CRAMPaletteList.Add(pictureBox90);
+			CRAMPaletteList.Add(pictureBox91);
+			CRAMPaletteList.Add(pictureBox92);
+			CRAMPaletteList.Add(pictureBox81);
+			CRAMPaletteList.Add(pictureBox82);
+			CRAMPaletteList.Add(pictureBox83);
+			CRAMPaletteList.Add(pictureBox84);
+			CRAMPaletteList.Add(pictureBox85);
+			CRAMPaletteList.Add(pictureBox86);
+			CRAMPaletteList.Add(pictureBox87);
+			CRAMPaletteList.Add(pictureBox88);
 
-				PictureBox picture = (PictureBox)sender;
-				if (picture.DataContext is null)
-				{
-					textBox_PaletteGenesisValue.Text = "";
-				}
-				else
-				{
-					textBox_PaletteGenesisValue.Text = picture.DataContext.ToString();
-				}
-				picture.Tag = "Selected";
-				picture.Invalidate();
-				lastPaletteGenesisSelected = picture;
-			}
-		}
+			CRAMPaletteList.Add(pictureBox128);
+			CRAMPaletteList.Add(pictureBox127);
+			CRAMPaletteList.Add(pictureBox125);
+			CRAMPaletteList.Add(pictureBox126);
+			CRAMPaletteList.Add(pictureBox121);
+			CRAMPaletteList.Add(pictureBox122);
+			CRAMPaletteList.Add(pictureBox123);
+			CRAMPaletteList.Add(pictureBox124);
+			CRAMPaletteList.Add(pictureBox113);
+			CRAMPaletteList.Add(pictureBox114);
+			CRAMPaletteList.Add(pictureBox115);
+			CRAMPaletteList.Add(pictureBox116);
+			CRAMPaletteList.Add(pictureBox117);
+			CRAMPaletteList.Add(pictureBox118);
+			CRAMPaletteList.Add(pictureBox119);
+			CRAMPaletteList.Add(pictureBox120);
 
-		private void SetColorPicturebox(PictureBox pic, Color color)
-		{
-			pic.Image = new Bitmap(pic.Width, pic.Height);
-			Graphics graphics = Graphics.FromImage(pic.Image);
+			CRAMPaletteList.Add(pictureBox192);
+			CRAMPaletteList.Add(pictureBox191);
+			CRAMPaletteList.Add(pictureBox189);
+			CRAMPaletteList.Add(pictureBox190);
+			CRAMPaletteList.Add(pictureBox185);
+			CRAMPaletteList.Add(pictureBox186);
+			CRAMPaletteList.Add(pictureBox187);
+			CRAMPaletteList.Add(pictureBox188);
+			CRAMPaletteList.Add(pictureBox177);
+			CRAMPaletteList.Add(pictureBox178);
+			CRAMPaletteList.Add(pictureBox179);
+			CRAMPaletteList.Add(pictureBox180);
+			CRAMPaletteList.Add(pictureBox181);
+			CRAMPaletteList.Add(pictureBox182);
+			CRAMPaletteList.Add(pictureBox183);
+			CRAMPaletteList.Add(pictureBox184);
 
-			Brush brush = new SolidBrush(color);
+			CRAMPaletteList.Add(pictureBox160);
+			CRAMPaletteList.Add(pictureBox159);
+			CRAMPaletteList.Add(pictureBox157);
+			CRAMPaletteList.Add(pictureBox158);
+			CRAMPaletteList.Add(pictureBox153);
+			CRAMPaletteList.Add(pictureBox154);
+			CRAMPaletteList.Add(pictureBox155);
+			CRAMPaletteList.Add(pictureBox156);
+			CRAMPaletteList.Add(pictureBox145);
+			CRAMPaletteList.Add(pictureBox146);
+			CRAMPaletteList.Add(pictureBox147);
+			CRAMPaletteList.Add(pictureBox148);
+			CRAMPaletteList.Add(pictureBox149);
+			CRAMPaletteList.Add(pictureBox150);
+			CRAMPaletteList.Add(pictureBox151);
+			CRAMPaletteList.Add(pictureBox152);
 
-			graphics.FillRectangle(brush, new System.Drawing.Rectangle(0, 0, pic.Width, pic.Height));
-		}
+			List<PictureBox> CRAMPaletteDuplicatedList = new List<PictureBox>();
+			CRAMPaletteDuplicatedList.Add(pictureBox65);
+			CRAMPaletteDuplicatedList.Add(pictureBox66);
+			CRAMPaletteDuplicatedList.Add(pictureBox67);
+			CRAMPaletteDuplicatedList.Add(pictureBox68);
+			CRAMPaletteDuplicatedList.Add(pictureBox69);
+			CRAMPaletteDuplicatedList.Add(pictureBox70);
+			CRAMPaletteDuplicatedList.Add(pictureBox71);
+			CRAMPaletteDuplicatedList.Add(pictureBox72);
+			CRAMPaletteDuplicatedList.Add(pictureBox73);
+			CRAMPaletteDuplicatedList.Add(pictureBox74);
+			CRAMPaletteDuplicatedList.Add(pictureBox75);
+			CRAMPaletteDuplicatedList.Add(pictureBox76);
+			CRAMPaletteDuplicatedList.Add(pictureBox77);
+			CRAMPaletteDuplicatedList.Add(pictureBox78);
+			CRAMPaletteDuplicatedList.Add(pictureBox79);
+			CRAMPaletteDuplicatedList.Add(pictureBox89);
 
-		private void SetEmptyColorPicturebox(PictureBox pic)
-		{
-			pic.Image = new Bitmap(pic.Width, pic.Height);
-			Graphics graphics = Graphics.FromImage(pic.Image);
-			Brush brush = new SolidBrush(Color.Transparent);
+			CRAMPaletteDuplicatedList.Add(pictureBox97);
+			CRAMPaletteDuplicatedList.Add(pictureBox98);
+			CRAMPaletteDuplicatedList.Add(pictureBox99);
+			CRAMPaletteDuplicatedList.Add(pictureBox100);
+			CRAMPaletteDuplicatedList.Add(pictureBox101);
+			CRAMPaletteDuplicatedList.Add(pictureBox102);
+			CRAMPaletteDuplicatedList.Add(pictureBox103);
+			CRAMPaletteDuplicatedList.Add(pictureBox104);
+			CRAMPaletteDuplicatedList.Add(pictureBox105);
+			CRAMPaletteDuplicatedList.Add(pictureBox106);
+			CRAMPaletteDuplicatedList.Add(pictureBox107);
+			CRAMPaletteDuplicatedList.Add(pictureBox108);
+			CRAMPaletteDuplicatedList.Add(pictureBox109);
+			CRAMPaletteDuplicatedList.Add(pictureBox110);
+			CRAMPaletteDuplicatedList.Add(pictureBox111);
+			CRAMPaletteDuplicatedList.Add(pictureBox112);
 
-			graphics.FillRectangle(brush, new System.Drawing.Rectangle(0, 0, pic.Width, pic.Height));
+			CRAMPaletteDuplicatedList.Add(pictureBox161);
+			CRAMPaletteDuplicatedList.Add(pictureBox162);
+			CRAMPaletteDuplicatedList.Add(pictureBox163);
+			CRAMPaletteDuplicatedList.Add(pictureBox164);
+			CRAMPaletteDuplicatedList.Add(pictureBox165);
+			CRAMPaletteDuplicatedList.Add(pictureBox166);
+			CRAMPaletteDuplicatedList.Add(pictureBox167);
+			CRAMPaletteDuplicatedList.Add(pictureBox168);
+			CRAMPaletteDuplicatedList.Add(pictureBox169);
+			CRAMPaletteDuplicatedList.Add(pictureBox170);
+			CRAMPaletteDuplicatedList.Add(pictureBox171);
+			CRAMPaletteDuplicatedList.Add(pictureBox172);
+			CRAMPaletteDuplicatedList.Add(pictureBox173);
+			CRAMPaletteDuplicatedList.Add(pictureBox174);
+			CRAMPaletteDuplicatedList.Add(pictureBox175);
+			CRAMPaletteDuplicatedList.Add(pictureBox176);
+
+			CRAMPaletteDuplicatedList.Add(pictureBox129);
+			CRAMPaletteDuplicatedList.Add(pictureBox130);
+			CRAMPaletteDuplicatedList.Add(pictureBox131);
+			CRAMPaletteDuplicatedList.Add(pictureBox132);
+			CRAMPaletteDuplicatedList.Add(pictureBox133);
+			CRAMPaletteDuplicatedList.Add(pictureBox134);
+			CRAMPaletteDuplicatedList.Add(pictureBox135);
+			CRAMPaletteDuplicatedList.Add(pictureBox136);
+			CRAMPaletteDuplicatedList.Add(pictureBox137);
+			CRAMPaletteDuplicatedList.Add(pictureBox138);
+			CRAMPaletteDuplicatedList.Add(pictureBox139);
+			CRAMPaletteDuplicatedList.Add(pictureBox140);
+			CRAMPaletteDuplicatedList.Add(pictureBox141);
+			CRAMPaletteDuplicatedList.Add(pictureBox142);
+			CRAMPaletteDuplicatedList.Add(pictureBox143);
+			CRAMPaletteDuplicatedList.Add(pictureBox144);
+
+			CRAMFullPalettes.RegisterPictureBoxPalette(CRAMPaletteList);
+			CRAMFullPalettes.RegisterTextBoxColorValue(textBox_CRAMColor_Value);
+			CRAMFullPalettes.RegisterPictureBoxDuplicatedIndicators(CRAMPaletteDuplicatedList);
 		}
 
 		private void SetColorARGB(Color color)
 		{
-			SetColorPicturebox(pictureBox_RGB8, color);
+			Utils.SetColorPicturebox(pictureBox_RGB8, color);
 
 			uint icolor = (uint)color.ToArgb();
-			uint genesis_color = ConvertARGBToGenesis(icolor);
-			uint genesis_color_converted = ConvertGenesisToARGB(genesis_color);
-			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString();
+			uint genesis_color = Utils.ConvertARGBToGenesis(icolor);
+			uint genesis_color_converted = Utils.ConvertGenesisToARGB(genesis_color);
+			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
 			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
 			Color c = Color.FromArgb((int)genesis_color_converted);
 			textBox_ColorGenesisConverted.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
-			SetColorPicturebox(pictureBox_Genesis, c);
+			Utils.SetColorPicturebox(pictureBox_Genesis, c);
 		}
 
 		private void SetColorGenesis(uint genesis_color)
 		{
-			uint color_converted = ConvertGenesisToARGB(genesis_color);
+			uint color_converted = Utils.ConvertGenesisToARGB(genesis_color);
 			Color acolor = Color.FromArgb((int)color_converted);
 			Color color = Color.FromArgb(255, acolor);
 
-			SetColorPicturebox(pictureBox_RGB8, color);
-			SetColorPicturebox(pictureBox_Genesis, color);
+			Utils.SetColorPicturebox(pictureBox_RGB8, color);
+			Utils.SetColorPicturebox(pictureBox_Genesis, color);
 
 			textBox_ColorGenesis.Text = "0x" + genesis_color.ToString("X2");
 			textBox_ColorGenesisDecimal.Text = genesis_color.ToString();
 			textBox_ColorARGB.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
 			textBox_ColorGenesisConverted.Text = "0x" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
-		}
-
-		private uint ConvertARGBToGenesis(uint color)
-		{
-			uint a = (color & 0xF0000000) >> (24 + 4);
-			uint r = (color & 0x00F00000) >> (16 + 4);
-			uint g = (color & 0x0000F000) >> (8 + 4);
-			uint b = (color & 0x000000F0) >> (0 + 4);
-
-			uint mask = 0xeee;
-			uint genesis_color = (((a << 12) | (b << 8) | (g << 4) | (r << 0)) & mask);
-
-			return genesis_color;
-		}
-
-		private uint ConvertGenesisToARGB(uint genesis_color)
-		{
-			uint r_genesis = (genesis_color & 0x00e) >> (1);
-			uint g_genesis = (genesis_color & 0x0e0) >> (1 + 4);
-			uint b_genesis = (genesis_color & 0xe00) >> (1 + 4 + 4);
-
-			uint r_rgb8 = (r_genesis * 255 / 7);
-			uint g_rgb8 = (g_genesis * 255 / 7);
-			uint b_rgb8 = (b_genesis * 255 / 7);
-
-			uint result_color = 0xff000000 | (r_rgb8 << 16) | (g_rgb8 << 8) | (b_rgb8);
-
-			return result_color;
 		}
 
 		private void pictureBox_GenesisPalette_Click(object sender, EventArgs e)
@@ -280,11 +304,6 @@ namespace GenesisColors
 				SetColorARGB(c);
 				textBox_ColorARGB.Text = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
 			}
-		}
-
-		private void textBox_ColorARGB_TextChanged(object sender, EventArgs e)
-		{
-
 		}
 
 		void textBox_KeyDown(object? sender, KeyEventArgs e)
@@ -314,12 +333,7 @@ namespace GenesisColors
 			}
 		}
 
-		private void label5_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button1_Click(object sender, EventArgs e)
+		private void button_LoadPalette_Click(object sender, EventArgs e)
 		{
 			if (LastFolderASEFile == "")
 			{
@@ -333,132 +347,43 @@ namespace GenesisColors
 			if (dialog.ShowDialog() == DialogResult.OK)
 			{
 				LastFolderASEFile = Path.GetFullPath(dialog.FileName);
-				ProccessASEFile(LastFolderASEFile);
+				ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
 				button_RefreshPalette.Enabled = true;
 			}
 		}
 
 		private void button_RefreshPalette_Click(object sender, EventArgs e)
 		{
-			ProccessASEFile(LastFolderASEFile);
+			ASEPaletteImporter.ProccessASEFile(LastFolderASEFile, ASEPalette, GenesisPalette);
 		}
 
-		struct ColorSlot
+		private void button_LoadCRAMFile_Click(object sender, EventArgs e)
 		{
-			public int duplicateColorIdx;
-			public int firstSlot;
-
-			public ColorSlot()
+			if (LastFolderCRAMFile == "")
 			{
-				firstSlot = -1;
-				duplicateColorIdx = -1;
+				LastFolderCRAMFile = AppDomain.CurrentDomain.BaseDirectory;
+			}
+
+			OpenFileDialog dialog = new OpenFileDialog();
+			dialog.Filter = "CRAM format|*.bin;*.ram|All files|*.*";
+			dialog.CheckFileExists = true;
+			dialog.InitialDirectory = LastFolderCRAMFile;
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				LastFolderCRAMFile = Path.GetFullPath(dialog.FileName);
+				CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
+				button_RefreshCRAMFile.Enabled = true;
 			}
 		}
 
-		private void ProccessASEFile(string filename)
+		private void button_RefreshCRAMFile_Click(object sender, EventArgs e)
 		{
-			if (!File.Exists(filename))
-				return;
+			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
+		}
 
-			textBox_PaletteASEValue.Text = "";
-			textBox_PaletteGenesisValue.Text = "";
-
-			for (int i = 0; i < ASEPalette.Count; i++)
-			{
-				ASEPalette[i].Tag = null;
-			}
-			for (int i = 0; i < GenesisPalette.Count; i++)
-			{
-				GenesisPalette[i].Tag = null;
-			}
-
-			byte[] fileBytes = File.ReadAllBytes(filename);
-			int totalColors = (int)fileBytes[0x20];
-			int positionColor = 0xAA;
-			int currColorIdx = 0;
-
-			Dictionary<uint, ColorSlot> ASEColorsDict = new Dictionary<uint, ColorSlot>();
-			Dictionary<uint, ColorSlot> genesisColorsDict = new Dictionary<uint, ColorSlot>();
-			int currDuplicatedASEColorIdx = 0;
-			int currDuplicatedGenesisColorIdx = 0;
-
-			while (currColorIdx < totalColors && positionColor<fileBytes.Length && currColorIdx < ASEPalette.Count)
-			{
-				positionColor += 2;
-				int r = (int)fileBytes[positionColor+0];
-				int g = (int)fileBytes[positionColor+1];
-				int b = (int)fileBytes[positionColor+2];
-				int a = (int)fileBytes[positionColor+3];
-				Color currColor = Color.FromArgb(a, r, g, b);
-				SetColorPicturebox(ASEPalette[currColorIdx], currColor);
-
-				String tooltipText = "0x" + currColor.R.ToString("X2") + currColor.G.ToString("X2") + currColor.B.ToString("X2");
-				ASEPalette[currColorIdx].DataContext = tooltipText;
-
-				uint icolor = (uint)currColor.ToArgb();
-				uint genesis_color = ConvertARGBToGenesis(icolor);
-				uint genesis_color_converted = ConvertGenesisToARGB(genesis_color);
-				Color c = Color.FromArgb((int)genesis_color_converted);
-				SetColorPicturebox(GenesisPalette[currColorIdx], c);
-				tooltipText = "0x" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
-				GenesisPalette[currColorIdx].DataContext = tooltipText;
-
-				//Check duplicates
-				if(ASEColorsDict.ContainsKey(icolor))
-				{
-					ColorSlot slot = ASEColorsDict[icolor];
-					if(slot.duplicateColorIdx < 0)
-					{
-						slot.duplicateColorIdx = currDuplicatedASEColorIdx;
-						ASEColorsDict[icolor] = slot;
-						++currDuplicatedASEColorIdx;
-						if(slot.firstSlot >=0 && slot.firstSlot < ASEPaletteDuplicated.Count)
-						{
-							SetColorPicturebox(ASEPaletteDuplicated[slot.firstSlot], DuplicatedColor[slot.duplicateColorIdx]);
-						}
-					}
-					if (slot.duplicateColorIdx < DuplicatedColor.Count)
-						SetColorPicturebox(ASEPaletteDuplicated[currColorIdx], DuplicatedColor[slot.duplicateColorIdx]);
-					else
-						SetColorPicturebox(ASEPaletteDuplicated[currColorIdx], Color.Black);
-				}
-				else
-				{
-					ColorSlot slot = new ColorSlot();
-					slot.firstSlot = currColorIdx;
-					ASEColorsDict.Add(icolor, slot);
-					SetEmptyColorPicturebox(ASEPaletteDuplicated[currColorIdx]);
-				}
-
-				if (genesisColorsDict.ContainsKey(genesis_color))
-				{
-					ColorSlot slot = genesisColorsDict[genesis_color];
-					if (slot.duplicateColorIdx < 0)
-					{
-						slot.duplicateColorIdx = currDuplicatedGenesisColorIdx;
-						genesisColorsDict[genesis_color] = slot;
-						++currDuplicatedGenesisColorIdx;
-						if (slot.firstSlot >= 0 && slot.firstSlot < GenesisPaletteDuplicated.Count)
-						{
-							SetColorPicturebox(GenesisPaletteDuplicated[slot.firstSlot], DuplicatedColor[slot.duplicateColorIdx]);
-						}
-					}
-					if (slot.duplicateColorIdx < DuplicatedColor.Count)
-						SetColorPicturebox(GenesisPaletteDuplicated[currColorIdx], DuplicatedColor[slot.duplicateColorIdx]);
-					else
-						SetColorPicturebox(GenesisPaletteDuplicated[currColorIdx], Color.Black);
-				}
-				else
-				{
-					ColorSlot slot = new ColorSlot();
-					slot.firstSlot = currColorIdx;
-					genesisColorsDict.Add(genesis_color, slot);
-					SetEmptyColorPicturebox(GenesisPaletteDuplicated[currColorIdx]);
-				}
-
-				positionColor += 4;
-				currColorIdx++;
-			}
+		private void checkBox_SwapBytes_CheckedChanged(object sender, EventArgs e)
+		{
+			CRAMImporter.ProccessCRAMFile(LastFolderCRAMFile, CRAMFullPalettes, checkBox_SwapBytes.Checked);
 		}
 	}
 }

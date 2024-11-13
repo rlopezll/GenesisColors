@@ -115,6 +115,141 @@
 			pictureBox4 = new PictureBox();
 			pictureBox2 = new PictureBox();
 			pictureBox1 = new PictureBox();
+			tabPage3 = new TabPage();
+			label10 = new Label();
+			checkBox_SwapBytes = new CheckBox();
+			pictureBox129 = new PictureBox();
+			pictureBox130 = new PictureBox();
+			pictureBox131 = new PictureBox();
+			pictureBox132 = new PictureBox();
+			pictureBox133 = new PictureBox();
+			pictureBox134 = new PictureBox();
+			pictureBox135 = new PictureBox();
+			pictureBox136 = new PictureBox();
+			pictureBox137 = new PictureBox();
+			pictureBox138 = new PictureBox();
+			pictureBox139 = new PictureBox();
+			pictureBox140 = new PictureBox();
+			pictureBox141 = new PictureBox();
+			pictureBox142 = new PictureBox();
+			pictureBox143 = new PictureBox();
+			pictureBox144 = new PictureBox();
+			pictureBox145 = new PictureBox();
+			pictureBox146 = new PictureBox();
+			pictureBox147 = new PictureBox();
+			pictureBox148 = new PictureBox();
+			pictureBox149 = new PictureBox();
+			pictureBox150 = new PictureBox();
+			pictureBox151 = new PictureBox();
+			pictureBox152 = new PictureBox();
+			pictureBox153 = new PictureBox();
+			pictureBox154 = new PictureBox();
+			pictureBox155 = new PictureBox();
+			pictureBox156 = new PictureBox();
+			pictureBox157 = new PictureBox();
+			pictureBox158 = new PictureBox();
+			pictureBox159 = new PictureBox();
+			pictureBox160 = new PictureBox();
+			pictureBox161 = new PictureBox();
+			pictureBox162 = new PictureBox();
+			pictureBox163 = new PictureBox();
+			pictureBox164 = new PictureBox();
+			pictureBox165 = new PictureBox();
+			pictureBox166 = new PictureBox();
+			pictureBox167 = new PictureBox();
+			pictureBox168 = new PictureBox();
+			pictureBox169 = new PictureBox();
+			pictureBox170 = new PictureBox();
+			pictureBox171 = new PictureBox();
+			pictureBox172 = new PictureBox();
+			pictureBox173 = new PictureBox();
+			pictureBox174 = new PictureBox();
+			pictureBox175 = new PictureBox();
+			pictureBox176 = new PictureBox();
+			pictureBox177 = new PictureBox();
+			pictureBox178 = new PictureBox();
+			pictureBox179 = new PictureBox();
+			pictureBox180 = new PictureBox();
+			pictureBox181 = new PictureBox();
+			pictureBox182 = new PictureBox();
+			pictureBox183 = new PictureBox();
+			pictureBox184 = new PictureBox();
+			pictureBox185 = new PictureBox();
+			pictureBox186 = new PictureBox();
+			pictureBox187 = new PictureBox();
+			pictureBox188 = new PictureBox();
+			pictureBox189 = new PictureBox();
+			pictureBox190 = new PictureBox();
+			pictureBox191 = new PictureBox();
+			pictureBox192 = new PictureBox();
+			pictureBox97 = new PictureBox();
+			pictureBox98 = new PictureBox();
+			pictureBox99 = new PictureBox();
+			pictureBox100 = new PictureBox();
+			pictureBox101 = new PictureBox();
+			pictureBox102 = new PictureBox();
+			pictureBox103 = new PictureBox();
+			pictureBox104 = new PictureBox();
+			pictureBox105 = new PictureBox();
+			pictureBox106 = new PictureBox();
+			pictureBox107 = new PictureBox();
+			pictureBox108 = new PictureBox();
+			pictureBox109 = new PictureBox();
+			pictureBox110 = new PictureBox();
+			pictureBox111 = new PictureBox();
+			pictureBox112 = new PictureBox();
+			pictureBox113 = new PictureBox();
+			pictureBox114 = new PictureBox();
+			pictureBox115 = new PictureBox();
+			pictureBox116 = new PictureBox();
+			pictureBox117 = new PictureBox();
+			pictureBox118 = new PictureBox();
+			pictureBox119 = new PictureBox();
+			pictureBox120 = new PictureBox();
+			pictureBox121 = new PictureBox();
+			pictureBox122 = new PictureBox();
+			pictureBox123 = new PictureBox();
+			pictureBox124 = new PictureBox();
+			pictureBox125 = new PictureBox();
+			pictureBox126 = new PictureBox();
+			pictureBox127 = new PictureBox();
+			pictureBox128 = new PictureBox();
+			button_RefreshCRAMFile = new Button();
+			button_LoadCRAMFile = new Button();
+			pictureBox65 = new PictureBox();
+			pictureBox66 = new PictureBox();
+			pictureBox67 = new PictureBox();
+			pictureBox68 = new PictureBox();
+			pictureBox69 = new PictureBox();
+			pictureBox70 = new PictureBox();
+			pictureBox71 = new PictureBox();
+			pictureBox72 = new PictureBox();
+			pictureBox73 = new PictureBox();
+			pictureBox74 = new PictureBox();
+			pictureBox75 = new PictureBox();
+			pictureBox76 = new PictureBox();
+			pictureBox77 = new PictureBox();
+			pictureBox78 = new PictureBox();
+			pictureBox79 = new PictureBox();
+			pictureBox80 = new PictureBox();
+			textBox_CRAMColor_Value = new TextBox();
+			label9 = new Label();
+			pictureBox81 = new PictureBox();
+			pictureBox82 = new PictureBox();
+			pictureBox83 = new PictureBox();
+			pictureBox84 = new PictureBox();
+			pictureBox85 = new PictureBox();
+			pictureBox86 = new PictureBox();
+			pictureBox87 = new PictureBox();
+			pictureBox88 = new PictureBox();
+			pictureBox89 = new PictureBox();
+			pictureBox90 = new PictureBox();
+			pictureBox91 = new PictureBox();
+			pictureBox92 = new PictureBox();
+			pictureBox93 = new PictureBox();
+			pictureBox94 = new PictureBox();
+			pictureBox95 = new PictureBox();
+			pictureBox96 = new PictureBox();
 			((System.ComponentModel.ISupportInitialize)pictureBox_GenesisPalette).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_RGB8).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_Genesis).BeginInit();
@@ -185,6 +320,135 @@
 			((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			tabPage3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox129).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox130).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox131).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox132).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox133).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox134).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox135).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox136).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox137).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox138).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox139).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox140).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox141).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox142).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox143).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox144).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox145).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox146).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox147).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox148).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox149).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox150).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox151).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox152).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox153).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox154).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox155).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox156).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox157).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox158).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox159).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox160).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox161).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox162).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox163).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox164).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox165).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox166).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox167).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox168).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox169).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox170).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox171).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox172).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox173).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox174).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox175).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox176).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox177).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox178).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox179).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox180).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox181).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox182).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox183).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox184).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox185).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox186).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox187).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox188).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox189).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox190).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox191).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox192).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox97).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox98).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox99).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox100).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox101).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox102).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox103).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox104).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox105).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox106).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox107).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox108).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox109).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox110).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox111).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox112).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox113).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox114).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox115).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox116).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox117).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox118).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox119).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox120).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox121).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox122).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox123).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox124).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox125).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox126).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox127).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox128).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox65).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox66).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox67).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox68).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox69).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox70).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox71).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox72).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox73).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox74).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox75).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox76).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox77).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox78).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox79).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox80).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox81).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox82).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox83).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox84).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox85).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox86).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox87).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox88).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox89).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox90).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox91).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox92).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox93).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox94).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox95).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox96).BeginInit();
 			SuspendLayout();
 			// 
 			// pictureBox_GenesisPalette
@@ -223,7 +487,6 @@
 			textBox_ColorARGB.Size = new Size(127, 23);
 			textBox_ColorARGB.TabIndex = 3;
 			textBox_ColorARGB.Text = "0xffffff";
-			textBox_ColorARGB.TextChanged += textBox_ColorARGB_TextChanged;
 			// 
 			// label1
 			// 
@@ -282,6 +545,7 @@
 			// 
 			tabControl1.Controls.Add(tabPage1);
 			tabControl1.Controls.Add(tabPage2);
+			tabControl1.Controls.Add(tabPage3);
 			tabControl1.Location = new Point(12, 12);
 			tabControl1.Name = "tabControl1";
 			tabControl1.SelectedIndex = 0;
@@ -739,7 +1003,7 @@
 			button_LoadPalette.TabIndex = 35;
 			button_LoadPalette.Text = "Load Palette";
 			button_LoadPalette.UseVisualStyleBackColor = true;
-			button_LoadPalette.Click += button1_Click;
+			button_LoadPalette.Click += button_LoadPalette_Click;
 			// 
 			// label5
 			// 
@@ -750,7 +1014,6 @@
 			label5.Size = new Size(126, 21);
 			label5.TabIndex = 34;
 			label5.Text = "Genesis Palette";
-			label5.Click += label5_Click;
 			// 
 			// label6
 			// 
@@ -1050,6 +1313,1360 @@
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
 			// 
+			// tabPage3
+			// 
+			tabPage3.Controls.Add(label10);
+			tabPage3.Controls.Add(checkBox_SwapBytes);
+			tabPage3.Controls.Add(pictureBox129);
+			tabPage3.Controls.Add(pictureBox130);
+			tabPage3.Controls.Add(pictureBox131);
+			tabPage3.Controls.Add(pictureBox132);
+			tabPage3.Controls.Add(pictureBox133);
+			tabPage3.Controls.Add(pictureBox134);
+			tabPage3.Controls.Add(pictureBox135);
+			tabPage3.Controls.Add(pictureBox136);
+			tabPage3.Controls.Add(pictureBox137);
+			tabPage3.Controls.Add(pictureBox138);
+			tabPage3.Controls.Add(pictureBox139);
+			tabPage3.Controls.Add(pictureBox140);
+			tabPage3.Controls.Add(pictureBox141);
+			tabPage3.Controls.Add(pictureBox142);
+			tabPage3.Controls.Add(pictureBox143);
+			tabPage3.Controls.Add(pictureBox144);
+			tabPage3.Controls.Add(pictureBox145);
+			tabPage3.Controls.Add(pictureBox146);
+			tabPage3.Controls.Add(pictureBox147);
+			tabPage3.Controls.Add(pictureBox148);
+			tabPage3.Controls.Add(pictureBox149);
+			tabPage3.Controls.Add(pictureBox150);
+			tabPage3.Controls.Add(pictureBox151);
+			tabPage3.Controls.Add(pictureBox152);
+			tabPage3.Controls.Add(pictureBox153);
+			tabPage3.Controls.Add(pictureBox154);
+			tabPage3.Controls.Add(pictureBox155);
+			tabPage3.Controls.Add(pictureBox156);
+			tabPage3.Controls.Add(pictureBox157);
+			tabPage3.Controls.Add(pictureBox158);
+			tabPage3.Controls.Add(pictureBox159);
+			tabPage3.Controls.Add(pictureBox160);
+			tabPage3.Controls.Add(pictureBox161);
+			tabPage3.Controls.Add(pictureBox162);
+			tabPage3.Controls.Add(pictureBox163);
+			tabPage3.Controls.Add(pictureBox164);
+			tabPage3.Controls.Add(pictureBox165);
+			tabPage3.Controls.Add(pictureBox166);
+			tabPage3.Controls.Add(pictureBox167);
+			tabPage3.Controls.Add(pictureBox168);
+			tabPage3.Controls.Add(pictureBox169);
+			tabPage3.Controls.Add(pictureBox170);
+			tabPage3.Controls.Add(pictureBox171);
+			tabPage3.Controls.Add(pictureBox172);
+			tabPage3.Controls.Add(pictureBox173);
+			tabPage3.Controls.Add(pictureBox174);
+			tabPage3.Controls.Add(pictureBox175);
+			tabPage3.Controls.Add(pictureBox176);
+			tabPage3.Controls.Add(pictureBox177);
+			tabPage3.Controls.Add(pictureBox178);
+			tabPage3.Controls.Add(pictureBox179);
+			tabPage3.Controls.Add(pictureBox180);
+			tabPage3.Controls.Add(pictureBox181);
+			tabPage3.Controls.Add(pictureBox182);
+			tabPage3.Controls.Add(pictureBox183);
+			tabPage3.Controls.Add(pictureBox184);
+			tabPage3.Controls.Add(pictureBox185);
+			tabPage3.Controls.Add(pictureBox186);
+			tabPage3.Controls.Add(pictureBox187);
+			tabPage3.Controls.Add(pictureBox188);
+			tabPage3.Controls.Add(pictureBox189);
+			tabPage3.Controls.Add(pictureBox190);
+			tabPage3.Controls.Add(pictureBox191);
+			tabPage3.Controls.Add(pictureBox192);
+			tabPage3.Controls.Add(pictureBox97);
+			tabPage3.Controls.Add(pictureBox98);
+			tabPage3.Controls.Add(pictureBox99);
+			tabPage3.Controls.Add(pictureBox100);
+			tabPage3.Controls.Add(pictureBox101);
+			tabPage3.Controls.Add(pictureBox102);
+			tabPage3.Controls.Add(pictureBox103);
+			tabPage3.Controls.Add(pictureBox104);
+			tabPage3.Controls.Add(pictureBox105);
+			tabPage3.Controls.Add(pictureBox106);
+			tabPage3.Controls.Add(pictureBox107);
+			tabPage3.Controls.Add(pictureBox108);
+			tabPage3.Controls.Add(pictureBox109);
+			tabPage3.Controls.Add(pictureBox110);
+			tabPage3.Controls.Add(pictureBox111);
+			tabPage3.Controls.Add(pictureBox112);
+			tabPage3.Controls.Add(pictureBox113);
+			tabPage3.Controls.Add(pictureBox114);
+			tabPage3.Controls.Add(pictureBox115);
+			tabPage3.Controls.Add(pictureBox116);
+			tabPage3.Controls.Add(pictureBox117);
+			tabPage3.Controls.Add(pictureBox118);
+			tabPage3.Controls.Add(pictureBox119);
+			tabPage3.Controls.Add(pictureBox120);
+			tabPage3.Controls.Add(pictureBox121);
+			tabPage3.Controls.Add(pictureBox122);
+			tabPage3.Controls.Add(pictureBox123);
+			tabPage3.Controls.Add(pictureBox124);
+			tabPage3.Controls.Add(pictureBox125);
+			tabPage3.Controls.Add(pictureBox126);
+			tabPage3.Controls.Add(pictureBox127);
+			tabPage3.Controls.Add(pictureBox128);
+			tabPage3.Controls.Add(button_RefreshCRAMFile);
+			tabPage3.Controls.Add(button_LoadCRAMFile);
+			tabPage3.Controls.Add(pictureBox65);
+			tabPage3.Controls.Add(pictureBox66);
+			tabPage3.Controls.Add(pictureBox67);
+			tabPage3.Controls.Add(pictureBox68);
+			tabPage3.Controls.Add(pictureBox69);
+			tabPage3.Controls.Add(pictureBox70);
+			tabPage3.Controls.Add(pictureBox71);
+			tabPage3.Controls.Add(pictureBox72);
+			tabPage3.Controls.Add(pictureBox73);
+			tabPage3.Controls.Add(pictureBox74);
+			tabPage3.Controls.Add(pictureBox75);
+			tabPage3.Controls.Add(pictureBox76);
+			tabPage3.Controls.Add(pictureBox77);
+			tabPage3.Controls.Add(pictureBox78);
+			tabPage3.Controls.Add(pictureBox79);
+			tabPage3.Controls.Add(pictureBox80);
+			tabPage3.Controls.Add(textBox_CRAMColor_Value);
+			tabPage3.Controls.Add(label9);
+			tabPage3.Controls.Add(pictureBox81);
+			tabPage3.Controls.Add(pictureBox82);
+			tabPage3.Controls.Add(pictureBox83);
+			tabPage3.Controls.Add(pictureBox84);
+			tabPage3.Controls.Add(pictureBox85);
+			tabPage3.Controls.Add(pictureBox86);
+			tabPage3.Controls.Add(pictureBox87);
+			tabPage3.Controls.Add(pictureBox88);
+			tabPage3.Controls.Add(pictureBox89);
+			tabPage3.Controls.Add(pictureBox90);
+			tabPage3.Controls.Add(pictureBox91);
+			tabPage3.Controls.Add(pictureBox92);
+			tabPage3.Controls.Add(pictureBox93);
+			tabPage3.Controls.Add(pictureBox94);
+			tabPage3.Controls.Add(pictureBox95);
+			tabPage3.Controls.Add(pictureBox96);
+			tabPage3.Location = new Point(4, 24);
+			tabPage3.Name = "tabPage3";
+			tabPage3.Size = new Size(575, 340);
+			tabPage3.TabIndex = 2;
+			tabPage3.Text = "CRAM Palette";
+			tabPage3.UseVisualStyleBackColor = true;
+			// 
+			// label10
+			// 
+			label10.AutoSize = true;
+			label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+			label10.Location = new Point(32, 270);
+			label10.Name = "label10";
+			label10.Size = new Size(526, 15);
+			label10.TabIndex = 188;
+			label10.Text = "*Some versions of the Gen emulator can export palettes, exporting the entire CRAM to a file.";
+			// 
+			// checkBox_SwapBytes
+			// 
+			checkBox_SwapBytes.AutoSize = true;
+			checkBox_SwapBytes.Location = new Point(381, 21);
+			checkBox_SwapBytes.Name = "checkBox_SwapBytes";
+			checkBox_SwapBytes.Size = new Size(85, 19);
+			checkBox_SwapBytes.TabIndex = 187;
+			checkBox_SwapBytes.Text = "Swap Bytes";
+			checkBox_SwapBytes.UseVisualStyleBackColor = true;
+			checkBox_SwapBytes.CheckedChanged += checkBox_SwapBytes_CheckedChanged;
+			// 
+			// pictureBox129
+			// 
+			pictureBox129.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox129.Location = new Point(40, 235);
+			pictureBox129.Name = "pictureBox129";
+			pictureBox129.Size = new Size(10, 11);
+			pictureBox129.TabIndex = 186;
+			pictureBox129.TabStop = false;
+			// 
+			// pictureBox130
+			// 
+			pictureBox130.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox130.Location = new Point(72, 235);
+			pictureBox130.Name = "pictureBox130";
+			pictureBox130.Size = new Size(10, 11);
+			pictureBox130.TabIndex = 185;
+			pictureBox130.TabStop = false;
+			// 
+			// pictureBox131
+			// 
+			pictureBox131.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox131.Location = new Point(104, 235);
+			pictureBox131.Name = "pictureBox131";
+			pictureBox131.Size = new Size(10, 11);
+			pictureBox131.TabIndex = 184;
+			pictureBox131.TabStop = false;
+			// 
+			// pictureBox132
+			// 
+			pictureBox132.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox132.Location = new Point(136, 235);
+			pictureBox132.Name = "pictureBox132";
+			pictureBox132.Size = new Size(10, 11);
+			pictureBox132.TabIndex = 183;
+			pictureBox132.TabStop = false;
+			// 
+			// pictureBox133
+			// 
+			pictureBox133.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox133.Location = new Point(168, 235);
+			pictureBox133.Name = "pictureBox133";
+			pictureBox133.Size = new Size(10, 11);
+			pictureBox133.TabIndex = 182;
+			pictureBox133.TabStop = false;
+			// 
+			// pictureBox134
+			// 
+			pictureBox134.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox134.Location = new Point(200, 235);
+			pictureBox134.Name = "pictureBox134";
+			pictureBox134.Size = new Size(10, 11);
+			pictureBox134.TabIndex = 181;
+			pictureBox134.TabStop = false;
+			// 
+			// pictureBox135
+			// 
+			pictureBox135.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox135.Location = new Point(232, 235);
+			pictureBox135.Name = "pictureBox135";
+			pictureBox135.Size = new Size(10, 11);
+			pictureBox135.TabIndex = 180;
+			pictureBox135.TabStop = false;
+			// 
+			// pictureBox136
+			// 
+			pictureBox136.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox136.Location = new Point(264, 235);
+			pictureBox136.Name = "pictureBox136";
+			pictureBox136.Size = new Size(10, 11);
+			pictureBox136.TabIndex = 179;
+			pictureBox136.TabStop = false;
+			// 
+			// pictureBox137
+			// 
+			pictureBox137.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox137.Location = new Point(296, 235);
+			pictureBox137.Name = "pictureBox137";
+			pictureBox137.Size = new Size(10, 11);
+			pictureBox137.TabIndex = 178;
+			pictureBox137.TabStop = false;
+			// 
+			// pictureBox138
+			// 
+			pictureBox138.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox138.Location = new Point(328, 235);
+			pictureBox138.Name = "pictureBox138";
+			pictureBox138.Size = new Size(10, 11);
+			pictureBox138.TabIndex = 177;
+			pictureBox138.TabStop = false;
+			// 
+			// pictureBox139
+			// 
+			pictureBox139.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox139.Location = new Point(360, 235);
+			pictureBox139.Name = "pictureBox139";
+			pictureBox139.Size = new Size(10, 11);
+			pictureBox139.TabIndex = 176;
+			pictureBox139.TabStop = false;
+			// 
+			// pictureBox140
+			// 
+			pictureBox140.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox140.Location = new Point(392, 235);
+			pictureBox140.Name = "pictureBox140";
+			pictureBox140.Size = new Size(10, 11);
+			pictureBox140.TabIndex = 175;
+			pictureBox140.TabStop = false;
+			// 
+			// pictureBox141
+			// 
+			pictureBox141.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox141.Location = new Point(424, 235);
+			pictureBox141.Name = "pictureBox141";
+			pictureBox141.Size = new Size(10, 11);
+			pictureBox141.TabIndex = 174;
+			pictureBox141.TabStop = false;
+			// 
+			// pictureBox142
+			// 
+			pictureBox142.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox142.Location = new Point(456, 235);
+			pictureBox142.Name = "pictureBox142";
+			pictureBox142.Size = new Size(10, 11);
+			pictureBox142.TabIndex = 173;
+			pictureBox142.TabStop = false;
+			// 
+			// pictureBox143
+			// 
+			pictureBox143.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox143.Location = new Point(488, 235);
+			pictureBox143.Name = "pictureBox143";
+			pictureBox143.Size = new Size(10, 11);
+			pictureBox143.TabIndex = 172;
+			pictureBox143.TabStop = false;
+			// 
+			// pictureBox144
+			// 
+			pictureBox144.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox144.Location = new Point(520, 235);
+			pictureBox144.Name = "pictureBox144";
+			pictureBox144.Size = new Size(10, 11);
+			pictureBox144.TabIndex = 171;
+			pictureBox144.TabStop = false;
+			// 
+			// pictureBox145
+			// 
+			pictureBox145.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox145.Location = new Point(288, 202);
+			pictureBox145.Name = "pictureBox145";
+			pictureBox145.Size = new Size(26, 27);
+			pictureBox145.TabIndex = 170;
+			pictureBox145.TabStop = false;
+			// 
+			// pictureBox146
+			// 
+			pictureBox146.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox146.Location = new Point(320, 202);
+			pictureBox146.Name = "pictureBox146";
+			pictureBox146.Size = new Size(26, 27);
+			pictureBox146.TabIndex = 169;
+			pictureBox146.TabStop = false;
+			// 
+			// pictureBox147
+			// 
+			pictureBox147.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox147.Location = new Point(352, 202);
+			pictureBox147.Name = "pictureBox147";
+			pictureBox147.Size = new Size(26, 27);
+			pictureBox147.TabIndex = 168;
+			pictureBox147.TabStop = false;
+			// 
+			// pictureBox148
+			// 
+			pictureBox148.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox148.Location = new Point(384, 202);
+			pictureBox148.Name = "pictureBox148";
+			pictureBox148.Size = new Size(26, 27);
+			pictureBox148.TabIndex = 167;
+			pictureBox148.TabStop = false;
+			// 
+			// pictureBox149
+			// 
+			pictureBox149.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox149.Location = new Point(416, 202);
+			pictureBox149.Name = "pictureBox149";
+			pictureBox149.Size = new Size(26, 27);
+			pictureBox149.TabIndex = 166;
+			pictureBox149.TabStop = false;
+			// 
+			// pictureBox150
+			// 
+			pictureBox150.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox150.Location = new Point(448, 202);
+			pictureBox150.Name = "pictureBox150";
+			pictureBox150.Size = new Size(26, 27);
+			pictureBox150.TabIndex = 165;
+			pictureBox150.TabStop = false;
+			// 
+			// pictureBox151
+			// 
+			pictureBox151.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox151.Location = new Point(480, 202);
+			pictureBox151.Name = "pictureBox151";
+			pictureBox151.Size = new Size(26, 27);
+			pictureBox151.TabIndex = 164;
+			pictureBox151.TabStop = false;
+			// 
+			// pictureBox152
+			// 
+			pictureBox152.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox152.Location = new Point(512, 202);
+			pictureBox152.Name = "pictureBox152";
+			pictureBox152.Size = new Size(26, 27);
+			pictureBox152.TabIndex = 163;
+			pictureBox152.TabStop = false;
+			// 
+			// pictureBox153
+			// 
+			pictureBox153.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox153.Location = new Point(160, 202);
+			pictureBox153.Name = "pictureBox153";
+			pictureBox153.Size = new Size(26, 27);
+			pictureBox153.TabIndex = 162;
+			pictureBox153.TabStop = false;
+			// 
+			// pictureBox154
+			// 
+			pictureBox154.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox154.Location = new Point(192, 202);
+			pictureBox154.Name = "pictureBox154";
+			pictureBox154.Size = new Size(26, 27);
+			pictureBox154.TabIndex = 161;
+			pictureBox154.TabStop = false;
+			// 
+			// pictureBox155
+			// 
+			pictureBox155.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox155.Location = new Point(224, 202);
+			pictureBox155.Name = "pictureBox155";
+			pictureBox155.Size = new Size(26, 27);
+			pictureBox155.TabIndex = 160;
+			pictureBox155.TabStop = false;
+			// 
+			// pictureBox156
+			// 
+			pictureBox156.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox156.Location = new Point(256, 202);
+			pictureBox156.Name = "pictureBox156";
+			pictureBox156.Size = new Size(26, 27);
+			pictureBox156.TabIndex = 159;
+			pictureBox156.TabStop = false;
+			// 
+			// pictureBox157
+			// 
+			pictureBox157.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox157.Location = new Point(96, 202);
+			pictureBox157.Name = "pictureBox157";
+			pictureBox157.Size = new Size(26, 27);
+			pictureBox157.TabIndex = 158;
+			pictureBox157.TabStop = false;
+			// 
+			// pictureBox158
+			// 
+			pictureBox158.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox158.Location = new Point(128, 202);
+			pictureBox158.Name = "pictureBox158";
+			pictureBox158.Size = new Size(26, 27);
+			pictureBox158.TabIndex = 157;
+			pictureBox158.TabStop = false;
+			// 
+			// pictureBox159
+			// 
+			pictureBox159.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox159.Location = new Point(64, 202);
+			pictureBox159.Name = "pictureBox159";
+			pictureBox159.Size = new Size(26, 27);
+			pictureBox159.TabIndex = 156;
+			pictureBox159.TabStop = false;
+			// 
+			// pictureBox160
+			// 
+			pictureBox160.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox160.Location = new Point(32, 202);
+			pictureBox160.Name = "pictureBox160";
+			pictureBox160.Size = new Size(26, 27);
+			pictureBox160.TabIndex = 155;
+			pictureBox160.TabStop = false;
+			// 
+			// pictureBox161
+			// 
+			pictureBox161.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox161.Location = new Point(40, 185);
+			pictureBox161.Name = "pictureBox161";
+			pictureBox161.Size = new Size(10, 11);
+			pictureBox161.TabIndex = 154;
+			pictureBox161.TabStop = false;
+			// 
+			// pictureBox162
+			// 
+			pictureBox162.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox162.Location = new Point(72, 185);
+			pictureBox162.Name = "pictureBox162";
+			pictureBox162.Size = new Size(10, 11);
+			pictureBox162.TabIndex = 153;
+			pictureBox162.TabStop = false;
+			// 
+			// pictureBox163
+			// 
+			pictureBox163.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox163.Location = new Point(104, 185);
+			pictureBox163.Name = "pictureBox163";
+			pictureBox163.Size = new Size(10, 11);
+			pictureBox163.TabIndex = 152;
+			pictureBox163.TabStop = false;
+			// 
+			// pictureBox164
+			// 
+			pictureBox164.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox164.Location = new Point(136, 185);
+			pictureBox164.Name = "pictureBox164";
+			pictureBox164.Size = new Size(10, 11);
+			pictureBox164.TabIndex = 151;
+			pictureBox164.TabStop = false;
+			// 
+			// pictureBox165
+			// 
+			pictureBox165.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox165.Location = new Point(168, 185);
+			pictureBox165.Name = "pictureBox165";
+			pictureBox165.Size = new Size(10, 11);
+			pictureBox165.TabIndex = 150;
+			pictureBox165.TabStop = false;
+			// 
+			// pictureBox166
+			// 
+			pictureBox166.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox166.Location = new Point(200, 185);
+			pictureBox166.Name = "pictureBox166";
+			pictureBox166.Size = new Size(10, 11);
+			pictureBox166.TabIndex = 149;
+			pictureBox166.TabStop = false;
+			// 
+			// pictureBox167
+			// 
+			pictureBox167.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox167.Location = new Point(232, 185);
+			pictureBox167.Name = "pictureBox167";
+			pictureBox167.Size = new Size(10, 11);
+			pictureBox167.TabIndex = 148;
+			pictureBox167.TabStop = false;
+			// 
+			// pictureBox168
+			// 
+			pictureBox168.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox168.Location = new Point(264, 185);
+			pictureBox168.Name = "pictureBox168";
+			pictureBox168.Size = new Size(10, 11);
+			pictureBox168.TabIndex = 147;
+			pictureBox168.TabStop = false;
+			// 
+			// pictureBox169
+			// 
+			pictureBox169.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox169.Location = new Point(296, 185);
+			pictureBox169.Name = "pictureBox169";
+			pictureBox169.Size = new Size(10, 11);
+			pictureBox169.TabIndex = 146;
+			pictureBox169.TabStop = false;
+			// 
+			// pictureBox170
+			// 
+			pictureBox170.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox170.Location = new Point(328, 185);
+			pictureBox170.Name = "pictureBox170";
+			pictureBox170.Size = new Size(10, 11);
+			pictureBox170.TabIndex = 145;
+			pictureBox170.TabStop = false;
+			// 
+			// pictureBox171
+			// 
+			pictureBox171.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox171.Location = new Point(360, 185);
+			pictureBox171.Name = "pictureBox171";
+			pictureBox171.Size = new Size(10, 11);
+			pictureBox171.TabIndex = 144;
+			pictureBox171.TabStop = false;
+			// 
+			// pictureBox172
+			// 
+			pictureBox172.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox172.Location = new Point(392, 185);
+			pictureBox172.Name = "pictureBox172";
+			pictureBox172.Size = new Size(10, 11);
+			pictureBox172.TabIndex = 143;
+			pictureBox172.TabStop = false;
+			// 
+			// pictureBox173
+			// 
+			pictureBox173.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox173.Location = new Point(424, 185);
+			pictureBox173.Name = "pictureBox173";
+			pictureBox173.Size = new Size(10, 11);
+			pictureBox173.TabIndex = 142;
+			pictureBox173.TabStop = false;
+			// 
+			// pictureBox174
+			// 
+			pictureBox174.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox174.Location = new Point(456, 185);
+			pictureBox174.Name = "pictureBox174";
+			pictureBox174.Size = new Size(10, 11);
+			pictureBox174.TabIndex = 141;
+			pictureBox174.TabStop = false;
+			// 
+			// pictureBox175
+			// 
+			pictureBox175.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox175.Location = new Point(488, 185);
+			pictureBox175.Name = "pictureBox175";
+			pictureBox175.Size = new Size(10, 11);
+			pictureBox175.TabIndex = 140;
+			pictureBox175.TabStop = false;
+			// 
+			// pictureBox176
+			// 
+			pictureBox176.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox176.Location = new Point(520, 185);
+			pictureBox176.Name = "pictureBox176";
+			pictureBox176.Size = new Size(10, 11);
+			pictureBox176.TabIndex = 139;
+			pictureBox176.TabStop = false;
+			// 
+			// pictureBox177
+			// 
+			pictureBox177.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox177.Location = new Point(288, 152);
+			pictureBox177.Name = "pictureBox177";
+			pictureBox177.Size = new Size(26, 27);
+			pictureBox177.TabIndex = 138;
+			pictureBox177.TabStop = false;
+			// 
+			// pictureBox178
+			// 
+			pictureBox178.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox178.Location = new Point(320, 152);
+			pictureBox178.Name = "pictureBox178";
+			pictureBox178.Size = new Size(26, 27);
+			pictureBox178.TabIndex = 137;
+			pictureBox178.TabStop = false;
+			// 
+			// pictureBox179
+			// 
+			pictureBox179.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox179.Location = new Point(352, 152);
+			pictureBox179.Name = "pictureBox179";
+			pictureBox179.Size = new Size(26, 27);
+			pictureBox179.TabIndex = 136;
+			pictureBox179.TabStop = false;
+			// 
+			// pictureBox180
+			// 
+			pictureBox180.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox180.Location = new Point(384, 152);
+			pictureBox180.Name = "pictureBox180";
+			pictureBox180.Size = new Size(26, 27);
+			pictureBox180.TabIndex = 135;
+			pictureBox180.TabStop = false;
+			// 
+			// pictureBox181
+			// 
+			pictureBox181.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox181.Location = new Point(416, 152);
+			pictureBox181.Name = "pictureBox181";
+			pictureBox181.Size = new Size(26, 27);
+			pictureBox181.TabIndex = 134;
+			pictureBox181.TabStop = false;
+			// 
+			// pictureBox182
+			// 
+			pictureBox182.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox182.Location = new Point(448, 152);
+			pictureBox182.Name = "pictureBox182";
+			pictureBox182.Size = new Size(26, 27);
+			pictureBox182.TabIndex = 133;
+			pictureBox182.TabStop = false;
+			// 
+			// pictureBox183
+			// 
+			pictureBox183.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox183.Location = new Point(480, 152);
+			pictureBox183.Name = "pictureBox183";
+			pictureBox183.Size = new Size(26, 27);
+			pictureBox183.TabIndex = 132;
+			pictureBox183.TabStop = false;
+			// 
+			// pictureBox184
+			// 
+			pictureBox184.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox184.Location = new Point(512, 152);
+			pictureBox184.Name = "pictureBox184";
+			pictureBox184.Size = new Size(26, 27);
+			pictureBox184.TabIndex = 131;
+			pictureBox184.TabStop = false;
+			// 
+			// pictureBox185
+			// 
+			pictureBox185.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox185.Location = new Point(160, 152);
+			pictureBox185.Name = "pictureBox185";
+			pictureBox185.Size = new Size(26, 27);
+			pictureBox185.TabIndex = 130;
+			pictureBox185.TabStop = false;
+			// 
+			// pictureBox186
+			// 
+			pictureBox186.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox186.Location = new Point(192, 152);
+			pictureBox186.Name = "pictureBox186";
+			pictureBox186.Size = new Size(26, 27);
+			pictureBox186.TabIndex = 129;
+			pictureBox186.TabStop = false;
+			// 
+			// pictureBox187
+			// 
+			pictureBox187.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox187.Location = new Point(224, 152);
+			pictureBox187.Name = "pictureBox187";
+			pictureBox187.Size = new Size(26, 27);
+			pictureBox187.TabIndex = 128;
+			pictureBox187.TabStop = false;
+			// 
+			// pictureBox188
+			// 
+			pictureBox188.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox188.Location = new Point(256, 152);
+			pictureBox188.Name = "pictureBox188";
+			pictureBox188.Size = new Size(26, 27);
+			pictureBox188.TabIndex = 127;
+			pictureBox188.TabStop = false;
+			// 
+			// pictureBox189
+			// 
+			pictureBox189.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox189.Location = new Point(96, 152);
+			pictureBox189.Name = "pictureBox189";
+			pictureBox189.Size = new Size(26, 27);
+			pictureBox189.TabIndex = 126;
+			pictureBox189.TabStop = false;
+			// 
+			// pictureBox190
+			// 
+			pictureBox190.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox190.Location = new Point(128, 152);
+			pictureBox190.Name = "pictureBox190";
+			pictureBox190.Size = new Size(26, 27);
+			pictureBox190.TabIndex = 125;
+			pictureBox190.TabStop = false;
+			// 
+			// pictureBox191
+			// 
+			pictureBox191.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox191.Location = new Point(64, 152);
+			pictureBox191.Name = "pictureBox191";
+			pictureBox191.Size = new Size(26, 27);
+			pictureBox191.TabIndex = 124;
+			pictureBox191.TabStop = false;
+			// 
+			// pictureBox192
+			// 
+			pictureBox192.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox192.Location = new Point(32, 152);
+			pictureBox192.Name = "pictureBox192";
+			pictureBox192.Size = new Size(26, 27);
+			pictureBox192.TabIndex = 123;
+			pictureBox192.TabStop = false;
+			// 
+			// pictureBox97
+			// 
+			pictureBox97.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox97.Location = new Point(40, 135);
+			pictureBox97.Name = "pictureBox97";
+			pictureBox97.Size = new Size(10, 11);
+			pictureBox97.TabIndex = 122;
+			pictureBox97.TabStop = false;
+			// 
+			// pictureBox98
+			// 
+			pictureBox98.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox98.Location = new Point(72, 135);
+			pictureBox98.Name = "pictureBox98";
+			pictureBox98.Size = new Size(10, 11);
+			pictureBox98.TabIndex = 121;
+			pictureBox98.TabStop = false;
+			// 
+			// pictureBox99
+			// 
+			pictureBox99.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox99.Location = new Point(104, 135);
+			pictureBox99.Name = "pictureBox99";
+			pictureBox99.Size = new Size(10, 11);
+			pictureBox99.TabIndex = 120;
+			pictureBox99.TabStop = false;
+			// 
+			// pictureBox100
+			// 
+			pictureBox100.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox100.Location = new Point(136, 135);
+			pictureBox100.Name = "pictureBox100";
+			pictureBox100.Size = new Size(10, 11);
+			pictureBox100.TabIndex = 119;
+			pictureBox100.TabStop = false;
+			// 
+			// pictureBox101
+			// 
+			pictureBox101.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox101.Location = new Point(168, 135);
+			pictureBox101.Name = "pictureBox101";
+			pictureBox101.Size = new Size(10, 11);
+			pictureBox101.TabIndex = 118;
+			pictureBox101.TabStop = false;
+			// 
+			// pictureBox102
+			// 
+			pictureBox102.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox102.Location = new Point(200, 135);
+			pictureBox102.Name = "pictureBox102";
+			pictureBox102.Size = new Size(10, 11);
+			pictureBox102.TabIndex = 117;
+			pictureBox102.TabStop = false;
+			// 
+			// pictureBox103
+			// 
+			pictureBox103.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox103.Location = new Point(232, 135);
+			pictureBox103.Name = "pictureBox103";
+			pictureBox103.Size = new Size(10, 11);
+			pictureBox103.TabIndex = 116;
+			pictureBox103.TabStop = false;
+			// 
+			// pictureBox104
+			// 
+			pictureBox104.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox104.Location = new Point(264, 135);
+			pictureBox104.Name = "pictureBox104";
+			pictureBox104.Size = new Size(10, 11);
+			pictureBox104.TabIndex = 115;
+			pictureBox104.TabStop = false;
+			// 
+			// pictureBox105
+			// 
+			pictureBox105.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox105.Location = new Point(296, 135);
+			pictureBox105.Name = "pictureBox105";
+			pictureBox105.Size = new Size(10, 11);
+			pictureBox105.TabIndex = 114;
+			pictureBox105.TabStop = false;
+			// 
+			// pictureBox106
+			// 
+			pictureBox106.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox106.Location = new Point(328, 135);
+			pictureBox106.Name = "pictureBox106";
+			pictureBox106.Size = new Size(10, 11);
+			pictureBox106.TabIndex = 113;
+			pictureBox106.TabStop = false;
+			// 
+			// pictureBox107
+			// 
+			pictureBox107.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox107.Location = new Point(360, 135);
+			pictureBox107.Name = "pictureBox107";
+			pictureBox107.Size = new Size(10, 11);
+			pictureBox107.TabIndex = 112;
+			pictureBox107.TabStop = false;
+			// 
+			// pictureBox108
+			// 
+			pictureBox108.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox108.Location = new Point(392, 135);
+			pictureBox108.Name = "pictureBox108";
+			pictureBox108.Size = new Size(10, 11);
+			pictureBox108.TabIndex = 111;
+			pictureBox108.TabStop = false;
+			// 
+			// pictureBox109
+			// 
+			pictureBox109.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox109.Location = new Point(424, 135);
+			pictureBox109.Name = "pictureBox109";
+			pictureBox109.Size = new Size(10, 11);
+			pictureBox109.TabIndex = 110;
+			pictureBox109.TabStop = false;
+			// 
+			// pictureBox110
+			// 
+			pictureBox110.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox110.Location = new Point(456, 135);
+			pictureBox110.Name = "pictureBox110";
+			pictureBox110.Size = new Size(10, 11);
+			pictureBox110.TabIndex = 109;
+			pictureBox110.TabStop = false;
+			// 
+			// pictureBox111
+			// 
+			pictureBox111.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox111.Location = new Point(488, 135);
+			pictureBox111.Name = "pictureBox111";
+			pictureBox111.Size = new Size(10, 11);
+			pictureBox111.TabIndex = 108;
+			pictureBox111.TabStop = false;
+			// 
+			// pictureBox112
+			// 
+			pictureBox112.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox112.Location = new Point(520, 135);
+			pictureBox112.Name = "pictureBox112";
+			pictureBox112.Size = new Size(10, 11);
+			pictureBox112.TabIndex = 107;
+			pictureBox112.TabStop = false;
+			// 
+			// pictureBox113
+			// 
+			pictureBox113.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox113.Location = new Point(288, 102);
+			pictureBox113.Name = "pictureBox113";
+			pictureBox113.Size = new Size(26, 27);
+			pictureBox113.TabIndex = 106;
+			pictureBox113.TabStop = false;
+			// 
+			// pictureBox114
+			// 
+			pictureBox114.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox114.Location = new Point(320, 102);
+			pictureBox114.Name = "pictureBox114";
+			pictureBox114.Size = new Size(26, 27);
+			pictureBox114.TabIndex = 105;
+			pictureBox114.TabStop = false;
+			// 
+			// pictureBox115
+			// 
+			pictureBox115.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox115.Location = new Point(352, 102);
+			pictureBox115.Name = "pictureBox115";
+			pictureBox115.Size = new Size(26, 27);
+			pictureBox115.TabIndex = 104;
+			pictureBox115.TabStop = false;
+			// 
+			// pictureBox116
+			// 
+			pictureBox116.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox116.Location = new Point(384, 102);
+			pictureBox116.Name = "pictureBox116";
+			pictureBox116.Size = new Size(26, 27);
+			pictureBox116.TabIndex = 103;
+			pictureBox116.TabStop = false;
+			// 
+			// pictureBox117
+			// 
+			pictureBox117.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox117.Location = new Point(416, 102);
+			pictureBox117.Name = "pictureBox117";
+			pictureBox117.Size = new Size(26, 27);
+			pictureBox117.TabIndex = 102;
+			pictureBox117.TabStop = false;
+			// 
+			// pictureBox118
+			// 
+			pictureBox118.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox118.Location = new Point(448, 102);
+			pictureBox118.Name = "pictureBox118";
+			pictureBox118.Size = new Size(26, 27);
+			pictureBox118.TabIndex = 101;
+			pictureBox118.TabStop = false;
+			// 
+			// pictureBox119
+			// 
+			pictureBox119.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox119.Location = new Point(480, 102);
+			pictureBox119.Name = "pictureBox119";
+			pictureBox119.Size = new Size(26, 27);
+			pictureBox119.TabIndex = 100;
+			pictureBox119.TabStop = false;
+			// 
+			// pictureBox120
+			// 
+			pictureBox120.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox120.Location = new Point(512, 102);
+			pictureBox120.Name = "pictureBox120";
+			pictureBox120.Size = new Size(26, 27);
+			pictureBox120.TabIndex = 99;
+			pictureBox120.TabStop = false;
+			// 
+			// pictureBox121
+			// 
+			pictureBox121.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox121.Location = new Point(160, 102);
+			pictureBox121.Name = "pictureBox121";
+			pictureBox121.Size = new Size(26, 27);
+			pictureBox121.TabIndex = 98;
+			pictureBox121.TabStop = false;
+			// 
+			// pictureBox122
+			// 
+			pictureBox122.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox122.Location = new Point(192, 102);
+			pictureBox122.Name = "pictureBox122";
+			pictureBox122.Size = new Size(26, 27);
+			pictureBox122.TabIndex = 97;
+			pictureBox122.TabStop = false;
+			// 
+			// pictureBox123
+			// 
+			pictureBox123.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox123.Location = new Point(224, 102);
+			pictureBox123.Name = "pictureBox123";
+			pictureBox123.Size = new Size(26, 27);
+			pictureBox123.TabIndex = 96;
+			pictureBox123.TabStop = false;
+			// 
+			// pictureBox124
+			// 
+			pictureBox124.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox124.Location = new Point(256, 102);
+			pictureBox124.Name = "pictureBox124";
+			pictureBox124.Size = new Size(26, 27);
+			pictureBox124.TabIndex = 95;
+			pictureBox124.TabStop = false;
+			// 
+			// pictureBox125
+			// 
+			pictureBox125.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox125.Location = new Point(96, 102);
+			pictureBox125.Name = "pictureBox125";
+			pictureBox125.Size = new Size(26, 27);
+			pictureBox125.TabIndex = 94;
+			pictureBox125.TabStop = false;
+			// 
+			// pictureBox126
+			// 
+			pictureBox126.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox126.Location = new Point(128, 102);
+			pictureBox126.Name = "pictureBox126";
+			pictureBox126.Size = new Size(26, 27);
+			pictureBox126.TabIndex = 93;
+			pictureBox126.TabStop = false;
+			// 
+			// pictureBox127
+			// 
+			pictureBox127.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox127.Location = new Point(64, 102);
+			pictureBox127.Name = "pictureBox127";
+			pictureBox127.Size = new Size(26, 27);
+			pictureBox127.TabIndex = 92;
+			pictureBox127.TabStop = false;
+			// 
+			// pictureBox128
+			// 
+			pictureBox128.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox128.Location = new Point(32, 102);
+			pictureBox128.Name = "pictureBox128";
+			pictureBox128.Size = new Size(26, 27);
+			pictureBox128.TabIndex = 91;
+			pictureBox128.TabStop = false;
+			// 
+			// button_RefreshCRAMFile
+			// 
+			button_RefreshCRAMFile.Enabled = false;
+			button_RefreshCRAMFile.Location = new Point(280, 288);
+			button_RefreshCRAMFile.Name = "button_RefreshCRAMFile";
+			button_RefreshCRAMFile.Size = new Size(122, 29);
+			button_RefreshCRAMFile.TabIndex = 90;
+			button_RefreshCRAMFile.Text = "Refresh";
+			button_RefreshCRAMFile.UseVisualStyleBackColor = true;
+			button_RefreshCRAMFile.Click += button_RefreshCRAMFile_Click;
+			// 
+			// button_LoadCRAMFile
+			// 
+			button_LoadCRAMFile.Location = new Point(152, 288);
+			button_LoadCRAMFile.Name = "button_LoadCRAMFile";
+			button_LoadCRAMFile.Size = new Size(122, 29);
+			button_LoadCRAMFile.TabIndex = 89;
+			button_LoadCRAMFile.Text = "Load CRAM file";
+			button_LoadCRAMFile.UseVisualStyleBackColor = true;
+			button_LoadCRAMFile.Click += button_LoadCRAMFile_Click;
+			// 
+			// pictureBox65
+			// 
+			pictureBox65.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox65.Location = new Point(40, 85);
+			pictureBox65.Name = "pictureBox65";
+			pictureBox65.Size = new Size(10, 11);
+			pictureBox65.TabIndex = 88;
+			pictureBox65.TabStop = false;
+			// 
+			// pictureBox66
+			// 
+			pictureBox66.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox66.Location = new Point(72, 85);
+			pictureBox66.Name = "pictureBox66";
+			pictureBox66.Size = new Size(10, 11);
+			pictureBox66.TabIndex = 87;
+			pictureBox66.TabStop = false;
+			// 
+			// pictureBox67
+			// 
+			pictureBox67.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox67.Location = new Point(104, 85);
+			pictureBox67.Name = "pictureBox67";
+			pictureBox67.Size = new Size(10, 11);
+			pictureBox67.TabIndex = 86;
+			pictureBox67.TabStop = false;
+			// 
+			// pictureBox68
+			// 
+			pictureBox68.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox68.Location = new Point(136, 85);
+			pictureBox68.Name = "pictureBox68";
+			pictureBox68.Size = new Size(10, 11);
+			pictureBox68.TabIndex = 85;
+			pictureBox68.TabStop = false;
+			// 
+			// pictureBox69
+			// 
+			pictureBox69.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox69.Location = new Point(168, 85);
+			pictureBox69.Name = "pictureBox69";
+			pictureBox69.Size = new Size(10, 11);
+			pictureBox69.TabIndex = 84;
+			pictureBox69.TabStop = false;
+			// 
+			// pictureBox70
+			// 
+			pictureBox70.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox70.Location = new Point(200, 85);
+			pictureBox70.Name = "pictureBox70";
+			pictureBox70.Size = new Size(10, 11);
+			pictureBox70.TabIndex = 83;
+			pictureBox70.TabStop = false;
+			// 
+			// pictureBox71
+			// 
+			pictureBox71.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox71.Location = new Point(232, 85);
+			pictureBox71.Name = "pictureBox71";
+			pictureBox71.Size = new Size(10, 11);
+			pictureBox71.TabIndex = 82;
+			pictureBox71.TabStop = false;
+			// 
+			// pictureBox72
+			// 
+			pictureBox72.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox72.Location = new Point(264, 85);
+			pictureBox72.Name = "pictureBox72";
+			pictureBox72.Size = new Size(10, 11);
+			pictureBox72.TabIndex = 81;
+			pictureBox72.TabStop = false;
+			// 
+			// pictureBox73
+			// 
+			pictureBox73.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox73.Location = new Point(296, 85);
+			pictureBox73.Name = "pictureBox73";
+			pictureBox73.Size = new Size(10, 11);
+			pictureBox73.TabIndex = 80;
+			pictureBox73.TabStop = false;
+			// 
+			// pictureBox74
+			// 
+			pictureBox74.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox74.Location = new Point(328, 85);
+			pictureBox74.Name = "pictureBox74";
+			pictureBox74.Size = new Size(10, 11);
+			pictureBox74.TabIndex = 79;
+			pictureBox74.TabStop = false;
+			// 
+			// pictureBox75
+			// 
+			pictureBox75.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox75.Location = new Point(360, 85);
+			pictureBox75.Name = "pictureBox75";
+			pictureBox75.Size = new Size(10, 11);
+			pictureBox75.TabIndex = 78;
+			pictureBox75.TabStop = false;
+			// 
+			// pictureBox76
+			// 
+			pictureBox76.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox76.Location = new Point(392, 85);
+			pictureBox76.Name = "pictureBox76";
+			pictureBox76.Size = new Size(10, 11);
+			pictureBox76.TabIndex = 77;
+			pictureBox76.TabStop = false;
+			// 
+			// pictureBox77
+			// 
+			pictureBox77.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox77.Location = new Point(424, 85);
+			pictureBox77.Name = "pictureBox77";
+			pictureBox77.Size = new Size(10, 11);
+			pictureBox77.TabIndex = 76;
+			pictureBox77.TabStop = false;
+			// 
+			// pictureBox78
+			// 
+			pictureBox78.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox78.Location = new Point(456, 85);
+			pictureBox78.Name = "pictureBox78";
+			pictureBox78.Size = new Size(10, 11);
+			pictureBox78.TabIndex = 75;
+			pictureBox78.TabStop = false;
+			// 
+			// pictureBox79
+			// 
+			pictureBox79.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox79.Location = new Point(488, 85);
+			pictureBox79.Name = "pictureBox79";
+			pictureBox79.Size = new Size(10, 11);
+			pictureBox79.TabIndex = 74;
+			pictureBox79.TabStop = false;
+			// 
+			// pictureBox80
+			// 
+			pictureBox80.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox80.Location = new Point(520, 85);
+			pictureBox80.Name = "pictureBox80";
+			pictureBox80.Size = new Size(10, 11);
+			pictureBox80.TabIndex = 73;
+			pictureBox80.TabStop = false;
+			// 
+			// textBox_CRAMColor_Value
+			// 
+			textBox_CRAMColor_Value.Location = new Point(135, 15);
+			textBox_CRAMColor_Value.Name = "textBox_CRAMColor_Value";
+			textBox_CRAMColor_Value.Size = new Size(100, 23);
+			textBox_CRAMColor_Value.TabIndex = 72;
+			// 
+			// label9
+			// 
+			label9.AutoSize = true;
+			label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+			label9.Location = new Point(32, 17);
+			label9.Name = "label9";
+			label9.Size = new Size(101, 21);
+			label9.TabIndex = 71;
+			label9.Text = "CRAM Color";
+			// 
+			// pictureBox81
+			// 
+			pictureBox81.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox81.Location = new Point(288, 52);
+			pictureBox81.Name = "pictureBox81";
+			pictureBox81.Size = new Size(26, 27);
+			pictureBox81.TabIndex = 70;
+			pictureBox81.TabStop = false;
+			// 
+			// pictureBox82
+			// 
+			pictureBox82.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox82.Location = new Point(320, 52);
+			pictureBox82.Name = "pictureBox82";
+			pictureBox82.Size = new Size(26, 27);
+			pictureBox82.TabIndex = 69;
+			pictureBox82.TabStop = false;
+			// 
+			// pictureBox83
+			// 
+			pictureBox83.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox83.Location = new Point(352, 52);
+			pictureBox83.Name = "pictureBox83";
+			pictureBox83.Size = new Size(26, 27);
+			pictureBox83.TabIndex = 68;
+			pictureBox83.TabStop = false;
+			// 
+			// pictureBox84
+			// 
+			pictureBox84.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox84.Location = new Point(384, 52);
+			pictureBox84.Name = "pictureBox84";
+			pictureBox84.Size = new Size(26, 27);
+			pictureBox84.TabIndex = 67;
+			pictureBox84.TabStop = false;
+			// 
+			// pictureBox85
+			// 
+			pictureBox85.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox85.Location = new Point(416, 52);
+			pictureBox85.Name = "pictureBox85";
+			pictureBox85.Size = new Size(26, 27);
+			pictureBox85.TabIndex = 66;
+			pictureBox85.TabStop = false;
+			// 
+			// pictureBox86
+			// 
+			pictureBox86.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox86.Location = new Point(448, 52);
+			pictureBox86.Name = "pictureBox86";
+			pictureBox86.Size = new Size(26, 27);
+			pictureBox86.TabIndex = 65;
+			pictureBox86.TabStop = false;
+			// 
+			// pictureBox87
+			// 
+			pictureBox87.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox87.Location = new Point(480, 52);
+			pictureBox87.Name = "pictureBox87";
+			pictureBox87.Size = new Size(26, 27);
+			pictureBox87.TabIndex = 64;
+			pictureBox87.TabStop = false;
+			// 
+			// pictureBox88
+			// 
+			pictureBox88.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox88.Location = new Point(512, 52);
+			pictureBox88.Name = "pictureBox88";
+			pictureBox88.Size = new Size(26, 27);
+			pictureBox88.TabIndex = 63;
+			pictureBox88.TabStop = false;
+			// 
+			// pictureBox89
+			// 
+			pictureBox89.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox89.Location = new Point(160, 52);
+			pictureBox89.Name = "pictureBox89";
+			pictureBox89.Size = new Size(26, 27);
+			pictureBox89.TabIndex = 62;
+			pictureBox89.TabStop = false;
+			// 
+			// pictureBox90
+			// 
+			pictureBox90.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox90.Location = new Point(192, 52);
+			pictureBox90.Name = "pictureBox90";
+			pictureBox90.Size = new Size(26, 27);
+			pictureBox90.TabIndex = 61;
+			pictureBox90.TabStop = false;
+			// 
+			// pictureBox91
+			// 
+			pictureBox91.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox91.Location = new Point(224, 52);
+			pictureBox91.Name = "pictureBox91";
+			pictureBox91.Size = new Size(26, 27);
+			pictureBox91.TabIndex = 60;
+			pictureBox91.TabStop = false;
+			// 
+			// pictureBox92
+			// 
+			pictureBox92.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox92.Location = new Point(256, 52);
+			pictureBox92.Name = "pictureBox92";
+			pictureBox92.Size = new Size(26, 27);
+			pictureBox92.TabIndex = 59;
+			pictureBox92.TabStop = false;
+			// 
+			// pictureBox93
+			// 
+			pictureBox93.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox93.Location = new Point(96, 52);
+			pictureBox93.Name = "pictureBox93";
+			pictureBox93.Size = new Size(26, 27);
+			pictureBox93.TabIndex = 58;
+			pictureBox93.TabStop = false;
+			// 
+			// pictureBox94
+			// 
+			pictureBox94.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox94.Location = new Point(128, 52);
+			pictureBox94.Name = "pictureBox94";
+			pictureBox94.Size = new Size(26, 27);
+			pictureBox94.TabIndex = 57;
+			pictureBox94.TabStop = false;
+			// 
+			// pictureBox95
+			// 
+			pictureBox95.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox95.Location = new Point(64, 52);
+			pictureBox95.Name = "pictureBox95";
+			pictureBox95.Size = new Size(26, 27);
+			pictureBox95.TabIndex = 56;
+			pictureBox95.TabStop = false;
+			// 
+			// pictureBox96
+			// 
+			pictureBox96.BorderStyle = BorderStyle.FixedSingle;
+			pictureBox96.Location = new Point(32, 52);
+			pictureBox96.Name = "pictureBox96";
+			pictureBox96.Size = new Size(26, 27);
+			pictureBox96.TabIndex = 55;
+			pictureBox96.TabStop = false;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1061,7 +2678,7 @@
 			MaximizeBox = false;
 			Name = "Form1";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Genesis Colors v0.1";
+			Text = "Genesis Colors v0.1.1";
 			Load += Form1_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox_GenesisPalette).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox_RGB8).EndInit();
@@ -1135,6 +2752,136 @@
 			((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			tabPage3.ResumeLayout(false);
+			tabPage3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox129).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox130).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox131).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox132).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox133).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox134).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox135).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox136).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox137).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox138).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox139).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox140).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox141).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox142).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox143).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox144).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox145).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox146).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox147).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox148).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox149).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox150).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox151).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox152).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox153).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox154).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox155).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox156).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox157).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox158).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox159).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox160).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox161).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox162).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox163).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox164).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox165).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox166).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox167).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox168).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox169).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox170).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox171).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox172).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox173).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox174).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox175).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox176).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox177).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox178).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox179).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox180).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox181).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox182).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox183).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox184).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox185).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox186).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox187).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox188).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox189).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox190).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox191).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox192).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox97).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox98).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox99).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox100).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox101).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox102).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox103).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox104).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox105).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox106).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox107).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox108).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox109).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox110).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox111).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox112).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox113).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox114).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox115).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox116).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox117).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox118).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox119).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox120).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox121).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox122).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox123).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox124).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox125).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox126).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox127).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox128).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox65).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox66).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox67).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox68).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox69).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox70).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox71).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox72).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox73).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox74).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox75).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox76).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox77).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox78).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox79).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox80).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox81).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox82).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox83).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox84).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox85).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox86).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox87).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox88).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox89).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox90).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox91).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox92).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox93).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox94).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox95).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox96).EndInit();
 			ResumeLayout(false);
 		}
 
@@ -1226,5 +2973,140 @@
 		private Label label8;
 		private Label label7;
 		private TextBox textBox_ColorGenesisConverted;
+		private TabPage tabPage3;
+		private CheckBox checkBox_SwapBytes;
+		private PictureBox pictureBox129;
+		private PictureBox pictureBox130;
+		private PictureBox pictureBox131;
+		private PictureBox pictureBox132;
+		private PictureBox pictureBox133;
+		private PictureBox pictureBox134;
+		private PictureBox pictureBox135;
+		private PictureBox pictureBox136;
+		private PictureBox pictureBox137;
+		private PictureBox pictureBox138;
+		private PictureBox pictureBox139;
+		private PictureBox pictureBox140;
+		private PictureBox pictureBox141;
+		private PictureBox pictureBox142;
+		private PictureBox pictureBox143;
+		private PictureBox pictureBox144;
+		private PictureBox pictureBox145;
+		private PictureBox pictureBox146;
+		private PictureBox pictureBox147;
+		private PictureBox pictureBox148;
+		private PictureBox pictureBox149;
+		private PictureBox pictureBox150;
+		private PictureBox pictureBox151;
+		private PictureBox pictureBox152;
+		private PictureBox pictureBox153;
+		private PictureBox pictureBox154;
+		private PictureBox pictureBox155;
+		private PictureBox pictureBox156;
+		private PictureBox pictureBox157;
+		private PictureBox pictureBox158;
+		private PictureBox pictureBox159;
+		private PictureBox pictureBox160;
+		private PictureBox pictureBox161;
+		private PictureBox pictureBox162;
+		private PictureBox pictureBox163;
+		private PictureBox pictureBox164;
+		private PictureBox pictureBox165;
+		private PictureBox pictureBox166;
+		private PictureBox pictureBox167;
+		private PictureBox pictureBox168;
+		private PictureBox pictureBox169;
+		private PictureBox pictureBox170;
+		private PictureBox pictureBox171;
+		private PictureBox pictureBox172;
+		private PictureBox pictureBox173;
+		private PictureBox pictureBox174;
+		private PictureBox pictureBox175;
+		private PictureBox pictureBox176;
+		private PictureBox pictureBox177;
+		private PictureBox pictureBox178;
+		private PictureBox pictureBox179;
+		private PictureBox pictureBox180;
+		private PictureBox pictureBox181;
+		private PictureBox pictureBox182;
+		private PictureBox pictureBox183;
+		private PictureBox pictureBox184;
+		private PictureBox pictureBox185;
+		private PictureBox pictureBox186;
+		private PictureBox pictureBox187;
+		private PictureBox pictureBox188;
+		private PictureBox pictureBox189;
+		private PictureBox pictureBox190;
+		private PictureBox pictureBox191;
+		private PictureBox pictureBox192;
+		private PictureBox pictureBox97;
+		private PictureBox pictureBox98;
+		private PictureBox pictureBox99;
+		private PictureBox pictureBox100;
+		private PictureBox pictureBox101;
+		private PictureBox pictureBox102;
+		private PictureBox pictureBox103;
+		private PictureBox pictureBox104;
+		private PictureBox pictureBox105;
+		private PictureBox pictureBox106;
+		private PictureBox pictureBox107;
+		private PictureBox pictureBox108;
+		private PictureBox pictureBox109;
+		private PictureBox pictureBox110;
+		private PictureBox pictureBox111;
+		private PictureBox pictureBox112;
+		private PictureBox pictureBox113;
+		private PictureBox pictureBox114;
+		private PictureBox pictureBox115;
+		private PictureBox pictureBox116;
+		private PictureBox pictureBox117;
+		private PictureBox pictureBox118;
+		private PictureBox pictureBox119;
+		private PictureBox pictureBox120;
+		private PictureBox pictureBox121;
+		private PictureBox pictureBox122;
+		private PictureBox pictureBox123;
+		private PictureBox pictureBox124;
+		private PictureBox pictureBox125;
+		private PictureBox pictureBox126;
+		private PictureBox pictureBox127;
+		private PictureBox pictureBox128;
+		private Button button_RefreshCRAMFile;
+		private Button button_LoadCRAMFile;
+		private PictureBox pictureBox65;
+		private PictureBox pictureBox66;
+		private PictureBox pictureBox67;
+		private PictureBox pictureBox68;
+		private PictureBox pictureBox69;
+		private PictureBox pictureBox70;
+		private PictureBox pictureBox71;
+		private PictureBox pictureBox72;
+		private PictureBox pictureBox73;
+		private PictureBox pictureBox74;
+		private PictureBox pictureBox75;
+		private PictureBox pictureBox76;
+		private PictureBox pictureBox77;
+		private PictureBox pictureBox78;
+		private PictureBox pictureBox79;
+		private PictureBox pictureBox80;
+		private TextBox textBox_CRAMColor_Value;
+		private Label label9;
+		private PictureBox pictureBox81;
+		private PictureBox pictureBox82;
+		private PictureBox pictureBox83;
+		private PictureBox pictureBox84;
+		private PictureBox pictureBox85;
+		private PictureBox pictureBox86;
+		private PictureBox pictureBox87;
+		private PictureBox pictureBox88;
+		private PictureBox pictureBox89;
+		private PictureBox pictureBox90;
+		private PictureBox pictureBox91;
+		private PictureBox pictureBox92;
+		private PictureBox pictureBox93;
+		private PictureBox pictureBox94;
+		private PictureBox pictureBox95;
+		private PictureBox pictureBox96;
+		private Label label10;
 	}
 }
